@@ -97,5 +97,27 @@ body {
  
       color: white;
       border-style: 1px solid black;
-      
+     
   }
+  .card-img {
+  
+  
+}
+.items {
+  border-style: solid 1px black;
+}
+.Card {
+ margin-top: 5px;
+}
+.desc {
+  color: white;
+  font-size: 16px;
+
+}
+.FullPage {
+  margin-left: 55px;
+  margin-right: 55px;
+height: 100%;
+width: 100%;
+
+}
