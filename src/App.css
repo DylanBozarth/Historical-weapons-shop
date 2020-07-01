@@ -1,0 +1,83 @@
+body {
+ background-image: url('./homepagephotos/paper.jpg');
+ background-size: 100% 100%;
+}
+.neolithic {
+  background-image: url('./homepagephotos/neolithic.jpg');
+  background-size: 100% 100%
+}
+.armor {
+  background-image: url('./homepagephotos/armor.jpg');
+  background-size: 100% 100%
+}
+.swords {
+  background-image: url('./homepagephotos/swords.jpg');
+  background-size: 100% 100%
+}
+.bronze {
+  background-image: url('./homepagephotos/bronze.jpg');
+  background-size: 100% 100%
+}
+.iron {
+  background-image: url('./homepagephotos/iron.jpg');
+  background-size: 100% 100%
+}
+.roman {
+  background-image: url('./homepagephotos/roman.jpg');
+  background-size: 100% 100%
+}
+.medieval {
+  background-image: url('./homepagephotos/medieval.jpg');
+  background-size: 100% 100%
+}
+.renaissance {
+  background-image: url('./homepagephotos/renaissance.jpg');
+  background-size: 100% 100%
+}
+.archery {
+  background-image: url('./homepagephotos/archery.jpg');
+  background-size: 100% 100%
+}
+.shields {
+  background-image: url('./homepagephotos/shields.jpg');
+  background-size: 100% 100%
+}
+.test {
+  font-size: 100vh;
+}
+.hometitle {
+  
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: cursive;
+}
+.home-square-title{
+  font-size: 7vh;
+  font-weight: bolder;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  -webkit-text-stroke: .5px black; /* width and color */;
+  font-family: 'Pangolin'
+}
+
+.col-sm {
+  
+  color: white;
+  text-align: center;
+  height: 40vh;
+  
+  margin: 2%;
+  transition: transform .8s; /* Animation */
+}
+.col-sm:hover {
+  text-decoration: none;
+}
+
+
+
+.col-sm:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  z-index: 2;
+}

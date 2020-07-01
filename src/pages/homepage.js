@@ -1,0 +1,91 @@
+import React from "react";
+import { Row, Col } from "react-bootstrap";
+import { Route, BrowserRouter, Link } from "react-router-dom";
+
+export const Homepage = () => (
+  <div>
+    <h1 className="hometitle">Historical weapon shop</h1>
+    <div className="container">
+      <div className="row eratype">
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm  neolithic">
+              <p className="home-square-title">Neolithic Age</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Bronze" className="col-sm col">
+            {" "}
+            <div className="col-sm  bronze">
+              <p className="home-square-title">Bronze Age</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm iron">
+              <p className="home-square-title">Iron Age</p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="row eratype">
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm roman">
+              <p className="home-square-title">Roman Era</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm medieval">
+              <p className="home-square-title">Medieval Era</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm renaissance">
+              <p className="home-square-title">The Renaissance </p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <h1 className="hometitle">Shop by type: </h1>
+      <div className="row catagorytype">
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm swords">
+              <p className="home-square-title">Swords</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm shields">
+              <p className="home-square-title">Shields</p>
+            </div>
+          </Link>
+        </div>
+      </div>
+      <div className="row">
+      <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm archery">
+              <p className="home-square-title">Archery</p>
+            </div>
+          </Link>
+        </div>
+        <div className="col-sm">
+          <Link to="/Neolithic" className="col-sm col">
+            <div className="col-sm armor">
+              <p className="home-square-title">Armor</p>
+            </div>
+          </Link>
+        </div>
+      </div>
+    </div>
+  </div>
+);
