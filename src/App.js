@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import { Homepage } from './pages/homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Neolithic} from './pages/productpages/neolithic'
+import Neolithic from './pages/productpages/neolithic'
 import {Bronze} from './pages/productpages/bronze'
 import { Route, BrowserRouter } from "react-router-dom";
 
