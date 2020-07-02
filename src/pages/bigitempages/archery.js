@@ -2,33 +2,33 @@ import React, { Component } from 'react';
 import { DisplayItem } from '../itemdisplayer/itemdisplayer'
 
 
-class Bronze extends Component {
+class Archery extends Component {
     constructor() {
         super();
     this.state = { items: [
         {
-          title: 'Bronze Rock art',
+          title: 'Archery Rock art',
           imageUrl: "/itemphotos/stoneage/art.jpg",
           price: '$300',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Bronze axe',
+          title: 'Archery axe',
           imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
           price: '$10',
           id: 2,
           desc: '"Ung like, rock hard." - A satisfied customer"'
         },
         {
-          title: 'Bronze Spear',
+          title: 'Archery Spear',
           imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
           price: '$15',
           id: 5,
           desc: 'A rock on the end of a stick, Classic.'
         },
         {
-          title: 'Bronze Dagger',
+          title: 'Archery Dagger',
           imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
           price: '$5',
           id: 3,
@@ -47,8 +47,8 @@ class Bronze extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="BronzeInfo">
-        <h1>The Bronze age, also known as the stone age. Was the age where humans used stone as the primary material for all technology.</h1>
+        <div className="ArcheryInfo">
+        <h1>The Archery age</h1>
         <div className="ItemList row">
         {
              
@@ -64,4 +64,4 @@ class Bronze extends Component {
     }
 } 
         
-export default Bronze;
+export default Archery;

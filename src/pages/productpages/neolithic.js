@@ -8,7 +8,7 @@ class Neolithic extends Component {
     this.state = { items: [
         {
           title: 'Neolithic Rock art',
-          imageUrl: "./itemphotos/stoneage/art.jpg",
+          imageUrl: "/itemphotos/stoneage/art.jpg",
           price: '$300',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
@@ -53,7 +53,7 @@ class Neolithic extends Component {
         {
              
             this.state.items.map(({title, imageUrl, desc, price, id }) => (
-            <DisplayItem key={id} title={title} imageUrl={imageUrl} desc={desc} price={price} />
+            <DisplayItem key={id} title={title} src={imageUrl} desc={desc} price={price} />
         ))} 
             </div> 
             
