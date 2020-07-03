@@ -1,11 +1,13 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
-import { Route, BrowserRouter, Link } from "react-router-dom";
+
+import { Link } from "react-router-dom";
 
 export const Homepage = () => (
   <div>
-    <h1 className="hometitle">Historical weapon shop</h1>
-    <div className="container">
+    
+    <div className="banner"><h1 className="hometitle">Historical weapon shop</h1><br /> <br /> <br /> <br /> <br /> <br /> <br /></div>
+    
+    <div className="container"><h1 className="pagetitle">Shop by era</h1>
       <div className="row eratype">
         <div className="col-sm">
           <Link to="/Neolithic" className="col-sm col">
@@ -53,7 +55,7 @@ export const Homepage = () => (
           </Link>
         </div>
       </div>
-      <h1 className="hometitle">Shop by type: </h1>
+      <h1 className="pagetitle">Shop by type: </h1>
       <div className="row catagorytype">
         <div className="col-sm">
           <Link to="/Swords" className="col-sm col">

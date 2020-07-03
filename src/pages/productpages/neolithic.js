@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { DisplayItem } from '../itemdisplayer/itemdisplayer'
-
+import {Card, Button} from 'react-bootstrap';
 
 class Neolithic extends Component {
     constructor() {
@@ -15,31 +14,45 @@ class Neolithic extends Component {
         },
         {
           title: 'Neolithic axe',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
           price: '$10',
           id: 2,
           desc: '"Ung like, rock hard." - A satisfied customer"'
         },
         {
           title: 'Neolithic Spear',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: './itemphotos/stoneage/dagger.jpg',
           price: '$15',
-          id: 5,
+          id: 3,
           desc: 'A rock on the end of a stick, Classic.'
         },
         {
           title: 'Neolithic Dagger',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
           price: '$5',
-          id: 3,
+          id: 4,
           desc: 'Just in case you lose your spear or axe'
         },
         {
-          title: 'Book about the Stone age',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          title: 'Neolithic Spear',
+          imageUrl: './itemphotos/stoneage/book.jpg',
           price: '$15',
+          id: 3,
+          desc: 'A rock on the end of a stick, Classic.'
+        },
+        {
+          title: 'Neolithic Dagger',
+          imageUrl: './itemphotos/stoneage/stonehammer.jpg',
+          price: '$5',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: 'Just in case you lose your spear or axe'
+        },
+        {
+          title: 'Neolithic Spear',
+          imageUrl: './itemphotos/stoneage/stoneset.jpg',
+          price: '$15',
+          id: 3,
+          desc: 'A rock on the end of a stick, Classic.'
         }
       ] 
     }
@@ -47,14 +60,24 @@ class Neolithic extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="NeolithicInfo">
-        <h1>The Neolithic age, also known as the stone age. Was the age where humans used stone as the primary material for all technology.</h1>
+        <div >
+        <h1 className="producttitle">The Neolithic age, also known as the stone age. Was the age where humans used stone as the primary material for all technology.</h1>
         <div className="ItemList row">
         {
              
-            this.state.items.map(({title, imageUrl, desc, price, id }) => (
-            <DisplayItem key={id} title={title} src={imageUrl} desc={desc} price={price} />
-        ))} 
+             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+              <Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} key={id} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary">Add to cart</Button>
+  </Card.Body>
+</Card>
+        ))}
             </div> 
             
             </div>

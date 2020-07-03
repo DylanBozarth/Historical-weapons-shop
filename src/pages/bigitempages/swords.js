@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { DisplayItem } from '../itemdisplayer/itemdisplayer'
 
 
 class Swords extends Component {
@@ -52,9 +51,22 @@ class Swords extends Component {
         <div className="ItemList row">
         {
              
-            this.state.items.map(({title, imageUrl, desc, price, id }) => (
-            <DisplayItem key={id} title={title} src={imageUrl} desc={desc} price={price} />
-        ))} 
+             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+              <div className="Card  col-lg-4" key={id}> 
+              <div className="thumbnail">
+                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
+                <div className="caption" key={id}>
+                  <h3>{title}</h3>
+                  <p className="flex-text desc">{desc} <br /> {price}</p>
+                  <p>
+                    <button className="btn btn-primary" href="#">Add to cart</button>
+                  </p>
+                </div>
+                
+              </div>
+            
+            </div>
+        ))}
             </div> 
             
             </div>

@@ -1,7 +1,26 @@
+.navbar {
+  
+  color: white;
+ text-align: center;
+ height: 10%;
+ position: fixed;
+}
+.carticon {
+  text-decoration: none;
+}
 body {
  background-image: url('./homepagephotos/paper.jpg');
  background-size: 100% 100%;
+
+ overflow-x: hidden;
 }
+@media only screen and (max-width: 600px) {
+  body {
+    max-width: 100% !important;
+  }
+
+
+  }
 .neolithic {
   background-image: url('./homepagephotos/neolithic.jpg');
   background-size: 100% 100%
@@ -42,15 +61,32 @@ body {
   background-image: url('./homepagephotos/shields.jpg');
   background-size: 100% 100%
 }
-.test {
-  font-size: 100vh;
+.banner  {
+ 
+  background-image: url('./banner.jpg');
+  background-size: 100% 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: -1%;
+  border: solid 1.5px black;
 }
 .hometitle {
-  
+  background-color: black;
   text-align: center;
   color: whitesmoke;
   font-weight: bolder;
   font-style: cursive;
+  
+}
+.pagetitle {
+  background-color: black;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: bolder;
+  font-style: cursive;
+  margin: 2%;
+  z-index: 2;
+  margin-top: 2%;
 }
 .home-square-title{
   font-size: 7vh;
@@ -100,19 +136,21 @@ body {
      
   }
   .card-img {
+  align-items: center;
+  margin-left: 50px;
   
   
 }
 .items {
   border-style: solid 1px black;
 }
-.Card {
- margin-top: 5px;
+.producttitle {
+  width: 90%
 }
 .desc {
   color: white;
   font-size: 16px;
-
+ text-align: center;
 }
 .FullPage {
   margin-left: 55px;
