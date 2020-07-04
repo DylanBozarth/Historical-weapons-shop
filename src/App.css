@@ -141,7 +141,9 @@ body {
   
   
 }
-
+.col-lg-4 {
+  text-align: center;
+}
 .items {
   border-style: solid 1px black;
 }
