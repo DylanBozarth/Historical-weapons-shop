@@ -14,6 +14,7 @@ import Armor from './pages/bigitempages/armor';
 import Shields from './pages/bigitempages/shields';
 import Swords from './pages/bigitempages/swords';
 import Cart from './pages/cart';
+import {Thing} from './pages/navbar';
 
 
 class App extends Component {
@@ -21,7 +22,8 @@ class App extends Component {
   render() { 
     return ( <BrowserRouter>
       <div className="App">
-        <div className="navbar">Navbar <Link className="carticon" to="/Cart"><i className="fa fa-shopping-cart" aria-hidden="true"></i></Link></div>
+        <Thing />
+        {/*<i className="fa fa-shopping-cart" aria-hidden="true"></i> */}
         <Route exact path="/" component={Homepage} />
         <Route path="/Neolithic" component={Neolithic} />
         <Route path="/Bronze" component={Bronze} />

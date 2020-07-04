@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import {Card, Button} from 'react-bootstrap';
 
 class Renaissance extends Component {
     constructor() {
@@ -52,20 +52,17 @@ class Renaissance extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={id}> 
-              <div className="thumbnail">
-                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" key={id}>
-                  <h3>{title}</h3>
-                  <p className="flex-text desc">{desc} <br /> {price}</p>
-                  <p>
-                    <button className="btn btn-primary" href="#">Add to cart</button>
-                  </p>
-                </div>
-                
-              </div>
-            
-            </div>
+              <Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} key={id} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary">Add to cart</Button>
+  </Card.Body>
+</Card>
         ))}
             </div> 
             

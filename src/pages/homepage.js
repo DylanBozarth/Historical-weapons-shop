@@ -7,7 +7,7 @@ export const Homepage = () => (
     
     <div className="banner"><h1 className="hometitle">Historical weapon shop</h1><br /> <br /> <br /> <br /> <br /> <br /> <br /></div>
     
-    <div className="container"><h1 className="pagetitle">Shop by era</h1>
+    <div className="container">
       <div className="row eratype">
         <div className="col-sm">
           <Link to="/Neolithic" className="col-sm col">

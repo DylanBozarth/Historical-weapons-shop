@@ -1,45 +1,73 @@
 import React, { Component } from 'react';
-
+import {Card, Button} from 'react-bootstrap';
 
 class Roman extends Component {
     constructor() {
         super();
     this.state = { items: [
         {
-          title: 'Roman Rock art',
-          imageUrl: "/itemphotos/stoneage/art.jpg",
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/daneaxe.jpg",
           price: '$300',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Roman axe',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
-          price: '$10',
-          id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          title: 'Early Roman weapons, full set',
+          imageUrl: "/itemphotos/roman/fullset.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Roman Spear',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
-          price: '$15',
-          id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          title: 'gladiator sword',
+          imageUrl: "/itemphotos/roman/gladiator.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Roman Dagger',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/lateheavysword.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Book about the Stone age',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
-          price: '$15',
-          id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
-        }
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/officerssword.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
+        },
+        {
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/officerssword.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
+        },
+        {
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/pilum.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
+        },
+        {
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/pugio.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
+        },
+        {
+          title: 'Dane axe',
+          imageUrl: "/itemphotos/roman/romanspear.jpg",
+          price: '$300',
+          id: 1,
+          desc: "Own a (reproduction) priceless piece of human history. "
+        },
       ] 
     }
   }
@@ -52,20 +80,17 @@ class Roman extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={id}> 
-              <div className="thumbnail">
-                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" key={id}>
-                  <h3>{title}</h3>
-                  <p className="flex-text desc">{desc} <br /> {price}</p>
-                  <p>
-                    <button className="btn btn-primary" href="#">Add to cart</button>
-                  </p>
-                </div>
-                
-              </div>
-            
-            </div>
+              <Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} key={id} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary">Add to cart</Button>
+  </Card.Body>
+</Card>
         ))}
             </div> 
             

@@ -1,72 +1,76 @@
 import React, { Component } from 'react';
+import {Card, Button} from 'react-bootstrap';
 
-
-class Iron extends Component {
+class ironage extends Component {
     constructor() {
         super();
     this.state = { items: [
         {
-          title: 'Iron Rock art',
-          imageUrl: "/itemphotos/stoneage/art.jpg",
+          title: 'ironage Rock art',
+          imageUrl: "/itemphotos/ironage/axe.jpg",
           price: '$300',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Iron axe',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          title: 'ironage axe',
+          imageUrl: '/itemphotos/ironage/dagger.jpg',
           price: '$10',
           id: 2,
           desc: '"Ung like, rock hard." - A satisfied customer"'
         },
         {
-          title: 'Iron Spear',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          title: 'ironage Spear',
+          imageUrl: '/itemphotos/ironage/hammer.jpg',
           price: '$15',
           id: 5,
           desc: 'A rock on the end of a stick, Classic.'
         },
         {
-          title: 'Iron Dagger',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          title: 'ironage Dagger',
+          imageUrl: '/itemphotos/ironage/sword.jpg',
           price: '$5',
           id: 3,
           desc: 'Just in case you lose your spear or axe'
         },
         {
           title: 'Book about the Stone age',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: '/itemphotos/ironage/sword irish.jpg',
           price: '$15',
           id: 4,
           desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
-        }
+        },
+        {
+          title: 'Book about the Stone age',
+          imageUrl: '/itemphotos/ironage/throwingaxe.jpg',
+          price: '$15',
+          id: 4,
+          desc: 'youu'
+        },
       ] 
     }
   }
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="IronInfo">
-        <h1>The Iron age</h1>
+        <div className="ironageInfo">
+        <h1>The ironage age</h1>
         <div className="ItemList row">
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={id}> 
-              <div className="thumbnail">
-                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" key={id}>
-                  <h3>{title}</h3>
-                  <p className="flex-text desc">{desc} <br /> {price}</p>
-                  <p>
-                    <button className="btn btn-primary" href="#">Add to cart</button>
-                  </p>
-                </div>
-                
-              </div>
-            
-            </div>
-        ))} 
+              <Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} key={id} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary">Add to cart</Button>
+  </Card.Body>
+</Card>
+        ))}
             </div> 
             
             </div>
@@ -76,4 +80,4 @@ class Iron extends Component {
     }
 } 
         
-export default Iron;
+export default ironage;

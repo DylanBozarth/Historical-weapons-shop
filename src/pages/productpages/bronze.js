@@ -1,45 +1,59 @@
 import React, { Component } from 'react';
-
+import {Card, Button} from 'react-bootstrap';
 
 class Bronze extends Component {
     constructor() {
         super();
     this.state = { items: [
         {
-          title: 'Bronze Rock art',
-          imageUrl: '/book.jpg',
+          title: "Bronze commoners' axe",
+          imageUrl: '/itemphotos/bronzeage/axe.jpg',
           price: '$300',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
-          title: 'Bronze axe',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          title: "Bronze noblemens' axe",
+          imageUrl: '/itemphotos/bronzeage/axefancy.jpg',
           price: '$10',
           id: 2,
           desc: '"Ung like, rock hard." - A satisfied customer"'
         },
         {
           title: 'Bronze Spear',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: '/itemphotos/bronzeage/dagger.jpg',
           price: '$15',
           id: 5,
           desc: 'A rock on the end of a stick, Classic.'
         },
         {
           title: 'Bronze Dagger',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: '/itemphotos/bronzeage/spearhead.jpg',
           price: '$5',
           id: 3,
           desc: 'Just in case you lose your spear or axe'
         },
         {
           title: 'Book about the Stone age',
-          imageUrl: 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.6VlNGksN5K9h8VpDxMsH5gHaLI%26pid%3DApi&f=1',
+          imageUrl: '/itemphotos/bronzeage/sword.jpg',
           price: '$15',
           id: 4,
           desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
-        }
+        },
+        {
+          title: 'Book about the Stone age',
+          imageUrl: '/itemphotos/bronzeage/swordbuffed.jpg',
+          price: '$15',
+          id: 4,
+          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+        },
+        {
+          title: 'Book about the Stone age',
+          imageUrl: '/itemphotos/bronzeage/swordnice.jpg',
+          price: '$15',
+          id: 4,
+          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+        },
       ] 
     }
   }
@@ -51,22 +65,19 @@ class Bronze extends Component {
         <div className="ItemList row">
         {
              
-            this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={id}>
-              <div className="thumbnail">
-                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" >
-                  <h3>{title}</h3>
-                  <p className="flex-text desc">{desc} <br /> {price}</p>
-                  <p>
-                    <button className="btn btn-primary" >Add to cart</button>
-                  </p>
-                </div>
-                
-              </div>
-            
-            </div>
-        ))} 
+             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+              <Card style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} key={id} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary">Add to cart</Button>
+  </Card.Body>
+</Card>
+        ))}
             </div> 
             
             </div>
