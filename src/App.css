@@ -104,7 +104,7 @@ body {
   text-align: center;
   height: 40vh;
   
-  margin: 2%;
+  margin: 1%;
   transition: transform .8s; /* Animation */
 }
 .col-sm:hover {

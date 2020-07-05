@@ -18,11 +18,13 @@ import {Thing} from './pages/navbar';
 
 
 class App extends Component {
-  state = {  }
+  state = { 
+    cartAmount: 0
+   }
   render() { 
     return ( <BrowserRouter>
       <div className="App">
-        <Thing />
+        <Thing cart={this.state.cartAmount} />
         {/*<i className="fa fa-shopping-cart" aria-hidden="true"></i> */}
         <Route exact path="/" component={Homepage} />
         <Route path="/Neolithic" component={Neolithic} />

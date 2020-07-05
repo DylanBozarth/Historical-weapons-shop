@@ -55,7 +55,7 @@ export const Homepage = () => (
           </Link>
         </div>
       </div>
-      <h1 className="pagetitle">Shop by type: </h1>
+    
       <div className="row catagorytype">
         <div className="col-sm">
           <Link to="/Swords" className="col-sm col">
