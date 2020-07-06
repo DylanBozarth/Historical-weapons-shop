@@ -10,63 +10,56 @@ class Roman extends Component {
           imageUrl: "/itemphotos/roman/daneaxe.jpg",
           price: '$300',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Weilded by the famous Varagian guard of the Late roman empire. Over 5 feet in length, this axe requires great strength to swing."
         },
         {
           title: 'Early Roman weapons, full set',
           imageUrl: "/itemphotos/roman/fullset.jpg",
-          price: '$300',
+          price: '$250',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "A member of Caesar's legions would be very familiar with these weapons."
         },
         {
-          title: 'gladiator sword',
+          title: 'Gladiator sword',
           imageUrl: "/itemphotos/roman/gladiator.jpg",
-          price: '$300',
+          price: '$120',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Are you not entertained?!"
         },
         {
-          title: 'Dane axe',
+          title: 'Late roman sword',
           imageUrl: "/itemphotos/roman/lateheavysword.jpg",
-          price: '$300',
+          price: '$110',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "As the Roman empire carried on, the classic shortsword was made to be longer in order to compensate for better armor.  "
         },
         {
-          title: 'Dane axe',
+          title: "Early Roman officer's sword.",
           imageUrl: "/itemphotos/roman/officerssword.jpg",
-          price: '$300',
+          price: '$250',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Centurion's sword. Commander of One hundred men. "
         },
         {
-          title: 'Dane axe',
-          imageUrl: "/itemphotos/roman/officerssword.jpg",
-          price: '$300',
-          id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
-        },
-        {
-          title: 'Dane axe',
+          title: 'Roman Throwing spear',
           imageUrl: "/itemphotos/roman/pilum.jpg",
-          price: '$300',
+          price: '$50',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "A pilum, used for throwing at the enemy before engaging with your Gladius."
         },
         {
-          title: 'Dane axe',
+          title: 'Roman Pugio',
           imageUrl: "/itemphotos/roman/pugio.jpg",
-          price: '$300',
+          price: '$30',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Dagger of a common Roman citizen in the early empire."
         },
         {
-          title: 'Dane axe',
+          title: 'Roman spear',
           imageUrl: "/itemphotos/roman/romanspear.jpg",
-          price: '$300',
+          price: '$50',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "The weapon of the common citizen called to defend the empire in times of need."
         },
       ] 
     }

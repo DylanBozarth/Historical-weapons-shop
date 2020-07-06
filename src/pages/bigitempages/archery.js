@@ -6,95 +6,95 @@ class Archery extends Component {
         super();
     this.state = { items: [
         {
-          title: 'Archery Rock art',
+          title: 'Archery arm guard',
           imageUrl: "/itemphotos/archery/armguard.jpg",
-          price: '$300',
-          id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
-        },
-        {
-          title: 'Archery axe',
-          imageUrl: '/itemphotos/archery/bronzearrowhead.png',
-          price: '$10',
-          id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
-        },
-        {
-          title: 'Archery Spear',
-          imageUrl: '/itemphotos/archery/bronzecrossbow.jpg',
           price: '$15',
+          id: 1,
+          desc: "Made from leather. "
+        },
+        {
+          title: 'Bronze arrowhead',
+          imageUrl: '/itemphotos/archery/bronzearrowhead.png',
+          price: '$5',
+          id: 2,
+          desc: 'Solid bronze'
+        },
+        {
+          title: 'Bronze Crossbow',
+          imageUrl: '/itemphotos/archery/bronzecrossbow.jpg',
+          price: '$150',
           id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'Solid bronze. '
         },
         {
-          title: 'Archery Dagger',
+          title: 'Chinese style repeater crossbow',
           imageUrl: '/itemphotos/archery/chinesecrossbow.jpg',
-          price: '$5',
+          price: '$250',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'A hail of crossbow bolts is great fun. '
         },
         {
-          title: 'Archery Dagger',
+          title: 'Copper thumb ring.',
           imageUrl: '/itemphotos/archery/copperthumbring.jpg',
-          price: '$5',
+          price: '$15',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'How ancient archers used to use heavy bows for hours on end.'
         },
         {
-          title: 'Archery Dagger',
+          title: 'Hip quiver',
           imageUrl: '/itemphotos/archery/hipquiver.jpg',
-          price: '$5',
+          price: '$45',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: "This does not go on your back, this isn't hollywood!"
         },
         {
-          title: 'Archery Dagger',
+          title: 'Hunting bow',
           imageUrl: '/itemphotos/archery/huntingbow.jpg',
-          price: '$5',
+          price: '$45',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: '45lbs draw weight. '
         },
         {
-          title: 'Archery Dagger',
+          title: 'Iron arrowhead',
           imageUrl: '/itemphotos/archery/ironarrowhead.jpg',
           price: '$5',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Sharper than bronze, but vulnerable to rust.'
         },
         {
-          title: 'Archery Dagger',
+          title: 'Medieval crossbow',
           imageUrl: '/itemphotos/archery/medcrossbow.jpg',
-          price: '$5',
+          price: '$110',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: '700lbs draw weight. '
         },
         {
-          title: 'Archery Dagger',
+          title: 'Mongolian horsebow.',
           imageUrl: '/itemphotos/archery/mongolian.jpg',
-          price: '$5',
+          price: '$60',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: '45lbs draw weight, short enough to use on a horse.'
         },
         {
-          title: 'Archery Dagger',
+          title: 'Stone arrowhead',
           imageUrl: '/itemphotos/archery/stonearrowhead.jpg',
           price: '$5',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Native American style'
         },
         {
-          title: 'Archery Dagger',
+          title: 'Stone bow',
           imageUrl: '/itemphotos/archery/stonebox.jpg',
-          price: '$5',
+          price: '$80',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Not made of stone, made for shooting stones. Great for hunting small game or target practice.'
         },
         {
-          title: 'Archery Dagger',
+          title: 'Wooden arrows, 50 count',
           imageUrl: '/itemphotos/archery/woodenarrows.jpg',
-          price: '$5',
+          price: '$120',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Made from poplar wood. Tipless'
         }
       ] 
     }

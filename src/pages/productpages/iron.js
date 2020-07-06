@@ -6,46 +6,46 @@ class ironage extends Component {
         super();
     this.state = { items: [
         {
-          title: 'ironage Rock art',
+          title: 'iron age axe',
           imageUrl: "/itemphotos/ironage/axe.jpg",
-          price: '$300',
+          price: '$45',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Iron axes are keep their edges significantly beter than bronze."
         },
         {
-          title: 'ironage axe',
+          title: 'iron dagger',
           imageUrl: '/itemphotos/ironage/dagger.jpg',
-          price: '$10',
+          price: '$15',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Excellent for concealed carry. '
         },
         {
-          title: 'ironage Spear',
+          title: 'Iron hammer',
           imageUrl: '/itemphotos/ironage/hammer.jpg',
-          price: '$15',
+          price: '$30',
           id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'The most common tool from this era.'
         },
         {
-          title: 'ironage Dagger',
+          title: 'Iron sword',
           imageUrl: '/itemphotos/ironage/sword.jpg',
-          price: '$5',
+          price: '$75',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Retains its edge better than bronze, but not as well as later swords.'
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Irish style Iron sword',
           imageUrl: '/itemphotos/ironage/sword irish.jpg',
-          price: '$15',
+          price: '$150',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: "Modeled after a historic unknown Irish lords' sword"
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Iron throwing axe',
           imageUrl: '/itemphotos/ironage/throwingaxe.jpg',
           price: '$15',
           id: 4,
-          desc: 'youu'
+          desc: 'Best used with the proper training. '
         },
       ] 
     }

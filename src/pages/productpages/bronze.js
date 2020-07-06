@@ -8,51 +8,51 @@ class Bronze extends Component {
         {
           title: "Bronze commoners' axe",
           imageUrl: '/itemphotos/bronzeage/axe.jpg',
-          price: '$300',
+          price: '$25',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "An simple axe made from a single piece of wood with a bronze blade attached."
         },
         {
-          title: "Bronze noblemens' axe",
+          title: "Bronze Noblemens' axe",
           imageUrl: '/itemphotos/bronzeage/axefancy.jpg',
-          price: '$10',
+          price: '$55',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
-        },
-        {
-          title: 'Bronze Spear',
-          imageUrl: '/itemphotos/bronzeage/dagger.jpg',
-          price: '$15',
-          id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'An ornate axe, made of bronze. .'
         },
         {
           title: 'Bronze Dagger',
+          imageUrl: '/itemphotos/bronzeage/dagger.jpg',
+          price: '$15',
+          id: 5,
+          desc: 'An Egyptian style dagger from the bronze age '
+        },
+        {
+          title: 'Bronze Spear Head',
           imageUrl: '/itemphotos/bronzeage/spearhead.jpg',
           price: '$5',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Solid Bronze'
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Bronze Age Sword',
           imageUrl: '/itemphotos/bronzeage/sword.jpg',
-          price: '$15',
+          price: '$110',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: '23 inches in length, solid bronze '
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordbuffed.jpg',
-          price: '$15',
+          price: '$250',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: "Modeled after what was most likely a king or governers' sword found in Egypt "
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordnice.jpg',
-          price: '$15',
+          price: '$250',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: "Modeled after what was most likely a king or governers' sword, found in Syria"
         },
       ] 
     }

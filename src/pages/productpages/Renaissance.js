@@ -6,53 +6,53 @@ class Renaissance extends Component {
         super();
     this.state = { items: [
         {
-          title: 'Renaissance Rock art',
+          title: 'Renaissance Decorative sword',
           imageUrl: "/itemphotos/Renaissance/decorativeswords.jpg",
           price: '$300',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "With the advent of gunpowder, swords went from being an essential weapon to more of a status symbol."
         },
         {
-          title: 'Renaissance axe',
+          title: "Duelers' swords set",
           imageUrl: '/itemphotos/Renaissance/duelers.jpg',
-          price: '$10',
+          price: '$450',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Settle an argument the proper way with these two dueling swords. '
         },
         {
-          title: 'Renaissance Spear',
+          title: 'Single Dueling Sword',
           imageUrl: '/itemphotos/Renaissance/duelsword.jpg',
-          price: '$15',
+          price: '$150',
           id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'Looks great over the fireplace'
         },
         {
-          title: 'Renaissance Dagger',
+          title: 'Flintlock rifle.',
           imageUrl: '/itemphotos/Renaissance/flintlock.jpg',
-          price: '$5',
+          price: '$250',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'An improvement on matchlocks, less likely to misfire in the rain. No background check is needed for black powder firearms.'
         },
         {
-          title: 'Renaissance Dagger',
+          title: 'Matchlock Pistol',
           imageUrl: '/itemphotos/Renaissance/matchlock.jpg',
-          price: '$5',
+          price: '$180',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Not reccomended for long distances. No background check is needed for black powder firearms.'
         },
         {
-          title: 'Renaissance Dagger',
+          title: 'Matchlock Rifle',
           imageUrl: '/itemphotos/Renaissance/matchlockrifle.jpg',
-          price: '$5',
+          price: '$260',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Looks great over a fireplace. No background check is needed for black powder firearms.'
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Late middle ages Halberd.',
           imageUrl: '/itemphotos/Renaissance/halberd.jpg',
-          price: '$15',
+          price: '$180',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: 'Still in use by the Swiss guard. '
         }
       ] 
     }

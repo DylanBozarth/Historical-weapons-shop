@@ -8,51 +8,45 @@ class Neolithic extends Component {
         {
           title: 'Neolithic Rock art',
           imageUrl: "/itemphotos/stoneage/art.jpg",
-          price: '$300',
+          price: '$160',
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
           title: 'Neolithic axe',
           imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
-          price: '$10',
+          price: '$18',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'One of the first tools ever made, looks great on a wall.'
         },
         {
-          title: 'Neolithic Spear',
+          title: 'Stone dagger',
           imageUrl: './itemphotos/stoneage/dagger.jpg',
-          price: '$15',
+          price: '$35',
           id: 3,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'Sharpened stone.'
         },
         {
-          title: 'Neolithic Dagger',
-          imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
-          price: '$5',
-          id: 4,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Neolithic Spear',
-          imageUrl: './itemphotos/stoneage/book.jpg',
-          price: '$15',
-          id: 3,
-          desc: 'A rock on the end of a stick, Classic.'
-        },
-        {
-          title: 'Neolithic Dagger',
+          title: 'Stone Hammer',
           imageUrl: './itemphotos/stoneage/stonehammer.jpg',
-          price: '$5',
+          price: '$25',
           id: 4,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Most likely used as a cooking tool.'
         },
         {
           title: 'Neolithic Spear',
-          imageUrl: './itemphotos/stoneage/stoneset.jpg',
+          imageUrl: './itemphotos/stoneage/spear.jpg',
           price: '$15',
           id: 3,
           desc: 'A rock on the end of a stick, Classic.'
+        },
+        
+        {
+          title: 'Book about the stone age',
+          imageUrl: './itemphotos/stoneage/book.jpg',
+          price: '$10',
+          id: 3,
+          desc: 'If you want to learn more about this era.'
         }
       ] 
     }
