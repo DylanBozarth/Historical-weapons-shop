@@ -4,7 +4,7 @@ import { Homepage } from './pages/homepage';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Neolithic from './pages/productpages/neolithic'
 import Bronze from './pages/productpages/bronze'
-import { Route, BrowserRouter, Link } from "react-router-dom";
+import { Route, BrowserRouter } from "react-router-dom";
 import Iron from './pages/productpages/iron';
 import Roman from './pages/productpages/roman';
 import Medieval from './pages/productpages/medieval';

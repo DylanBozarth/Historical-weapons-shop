@@ -1,5 +1,5 @@
 import React from "react";
-import { Navbar, Nav, NavLink, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export const Thing = () => (
