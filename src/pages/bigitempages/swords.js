@@ -5,96 +5,82 @@ class Swords extends Component {
     constructor() {
         super();
     this.state = { items: [
+      {
+        title: 'Barbarian Sword',
+        imageUrl: "/itemphotos/medieval/barbariansword.jpg",
+        price: '$300',
+        id: 1,
+        desc: "Over 5 feet in length. Classic sword of the Βάρβαρος."
+      },
+      {
+        title: "Crusader's sword",
+        imageUrl: '/itemphotos/medieval/cursadersword.jpg',
+        price: '$160',
+        id: 2,
+        desc: 'Great for bringing to the holy land.'
+      },
+      {
+        title: 'Medieval Dagger',
+        imageUrl: '/itemphotos/medieval/dagger.jpg',
+        price: '$25',
+        id: 5,
+        desc: 'A perfect sidearm for a merchant or traveling scholar'
+      },
+      {
+        title: 'Islamic style sword',
+        imageUrl: '/itemphotos/medieval/islamicstylesword.jpg',
+        price: '$145',
+        id: 3,
+        desc: 'Used widely Seljuk Turks, and partially by the Fatimids.'
+      },
+      {
+        title: 'Medieval Longsword',
+        imageUrl: '/itemphotos/medieval/longsword.jpg',
+        price: '$150',
+        id: 4,
+        desc: 'French style Medieval sword. Made for a knight.'
+      },
+      {
+        title: "Saladin's Damascus steel sword.",
+        imageUrl: '/itemphotos/medieval/saladin.jpg',
+        price: '$1500',
+        id: 4,
+        desc: "Modeled after the famous leader of the Saracens, Sala-al-din's (صلاح الدين يوسف بن أيوب) Sword. "
+      },
+      {
+        title: 'Scottish Claymore Sword',
+        imageUrl: '/itemphotos/medieval/scottishclaymore.jpg',
+        price: '$250',
+        id: 4,
+        desc: 'Over 6 feet long. Great for wielding whilst screaming "Freedom!"'
+      },
         {
-          title: 'Swords Rock art',
-          imageUrl: "/itemphotos/swords/barbariansword.jpg",
-          price: '$300',
-          id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
-        },
-        {
-          title: 'Swords axe',
-          imageUrl: '/itemphotos/swords/cursadersword.jpg',
-          price: '$10',
-          id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
-        },
-        {
-          title: 'Swords Spear',
-          imageUrl: '/itemphotos/swords/dagger.jpg',
-          price: '$15',
-          id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/islamicstylesword.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/longsword.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/officerssword.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/saladin.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/scottishclaymore.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
-          imageUrl: '/itemphotos/swords/sword.jpg',
-          price: '$5',
-          id: 3,
-          desc: 'Just in case you lose your spear or axe'
-        },
-        {
-          title: 'Swords Dagger',
+          title: 'Bronze buffed sword',
           imageUrl: '/itemphotos/swords/swordbuffed.jpg',
-          price: '$5',
+          price: '$45',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Solid Bronze, buffed to look great for ceremonial purposes.'
         },
         {
-          title: 'Swords Dagger',
+          title: 'Iron longsword and shortsword',
           imageUrl: '/itemphotos/swords/swordiron.jpg',
-          price: '$5',
+          price: '$150',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: '23 inch long sword, with a 9 inch short sword included.'
         },
         {
-          title: 'Swords Dagger',
+          title: 'Bronze Greek style sword',
           imageUrl: '/itemphotos/swords/swordnice.jpg',
-          price: '$5',
+          price: '$75',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Made of bronze with a wood handle'
         },
         {
-          title: 'Book about the Stone age',
-          imageUrl: '/itemphotos/swords/sword irish.jpg',
-          price: '$15',
+          title: 'Irish style Iron sword',
+          imageUrl: '/itemphotos/ironage/sword irish.jpg',
+          price: '$150',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: "Modeled after a historic unknown Irish lords' sword"
         }
       ] 
     }

@@ -6,102 +6,102 @@ class Armor extends Component {
         super();
     this.state = { items: [
         {
-          title: 'Armor Rock art',
+          title: 'Helmet from the 30 years war',
           imageUrl: "/itemphotos/armor/30yearswarhelmet.jpg",
-          price: '$300',
+          price: '$120',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Used by French armies during the 30 years war "
         },
         {
-          title: 'Armor axe',
+          title: 'Helmet of the Avars',
           imageUrl: '/itemphotos/armor/avar helmet.jpg',
-          price: '$10',
+          price: '$100',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Used by the nomadic Avar Khanganate. '
         },
         {
-          title: 'Armor axe',
+          title: "Conquistador's helm",
           imageUrl: '/itemphotos/armor/conquistador.jpg',
-          price: '$10',
+          price: '$150',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'One solid peice of steel. '
         },
         {
-          title: 'Armor axe',
+          title: "Crusader's helm ",
           imageUrl: '/itemphotos/armor/crusaderhelmet.jpg',
-          price: '$10',
+          price: '$130',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Used by the Crusader states in the 11th century.'
         },
         {
-          title: 'Armor axe',
+          title: 'Viking helmet',
           imageUrl: '/itemphotos/armor/vikinghelmet.jpg',
-          price: '$10',
+          price: '$70',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'No horns on this helmet.'
         },
         {
-          title: 'Armor axe',
+          title: 'Bronze armor',
           imageUrl: '/itemphotos/armor/bronzeage.jpg',
-          price: '$10',
+          price: '$150',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Softer than Iron, but certianly looks good.'
         },
         {
-          title: 'Armor axe',
+          title: 'Mycenean Bronze armor set',
           imageUrl: '/itemphotos/armor/myceneanarmor.jpg',
-          price: '$10',
+          price: '$250',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Oversized in order to protect the wearer.'
         },
         {
-          title: 'Armor axe',
+          title: 'Early Roman armor',
           imageUrl: '/itemphotos/armor/earlyroman.jpg',
-          price: '$10',
+          price: '$150',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Early roman armor set. Commonly known as Lorica Segmentum'
         },
         {
-          title: 'Armor axe',
+          title: 'Late Roman armor',
           imageUrl: '/itemphotos/armor/lateroman.jpg',
-          price: '$10',
+          price: '$130',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'More flexible than early roman armor, but not as good against stabbing attacks.'
         },
         {
-          title: 'Armor axe',
+          title: 'Gambeson',
           imageUrl: '/itemphotos/armor/gambeson.jpg',
-          price: '$10',
+          price: '$60',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Thick linen. Used underneath armor, or alone.'
         },
         {
-          title: 'Armor axe',
+          title: 'Gothic plate armor',
           imageUrl: '/itemphotos/armor/gothicplate.jpg',
-          price: '$10',
+          price: '$200',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'The heaviest armor before the age of gunpowder.'
         },
         {
-          title: 'Armor Spear',
+          title: 'Mongol Armor',
           imageUrl: '/itemphotos/armor/mongolarmor.jpg',
-          price: '$15',
+          price: '$130',
           id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'For use on top of a horse. '
         },
         {
-          title: 'Armor Dagger',
+          title: 'Mughal Armor',
           imageUrl: '/itemphotos/armor/mughalarmor.jpg',
-          price: '$5',
+          price: '$150',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'One of the latest armors made before the age of gunpowder.'
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Teutonic Armor set',
           imageUrl: '/itemphotos/armor/teutonicarmor.jpg',
-          price: '$15',
+          price: '$250',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: ''
         }
       ] 
     }

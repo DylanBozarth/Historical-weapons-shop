@@ -6,74 +6,74 @@ class Shields extends Component {
         super();
     this.state = { items: [
         {
-          title: 'Shields Rock art',
+          title: 'Bronze shield',
           imageUrl: "/itemphotos/shields/bronzeshield.jpg",
-          price: '$300',
+          price: '$150',
           id: 1,
-          desc: "Own a (reproduction) priceless piece of human history. "
+          desc: "Be sure to oil regularly "
         },
         {
-          title: 'Shields axe',
+          title: 'Dark ages shield',
           imageUrl: '/itemphotos/shields/darkages.jpg',
-          price: '$10',
+          price: '$80',
           id: 2,
-          desc: '"Ung like, rock hard." - A satisfied customer"'
+          desc: 'Worse quality than Roman shields, as they did not have the same materials or skills.'
         },
         {
-          title: 'Shields Spear',
+          title: 'Early Roman shield',
           imageUrl: '/itemphotos/shields/earlyroman.jpg',
-          price: '$15',
+          price: '$100',
           id: 5,
-          desc: 'A rock on the end of a stick, Classic.'
+          desc: 'Mostly made from wood.'
         },
         {
-          title: 'Shields Dagger',
+          title: 'English Coat of arms shield ',
           imageUrl: '/itemphotos/shields/english.jpg',
-          price: '$5',
+          price: '$65',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'By the grace of Saint George we are able to offer this item. '
         },
         {
-          title: 'Shields Dagger',
+          title: 'Iron age shield',
           imageUrl: '/itemphotos/shields/ironshield.jpg',
-          price: '$5',
+          price: '$45',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Much harder than bronze'
         },
         {
-          title: 'Shields Dagger',
+          title: 'Late Roman Chi-ro shield',
           imageUrl: '/itemphotos/shields/lateroman.jpg',
-          price: '$5',
+          price: '$100',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'The standard shield for all Roman soldiers after the reign of Constantine the great.'
         },
         {
-          title: 'Shields Dagger',
+          title: 'Leather Shield',
           imageUrl: '/itemphotos/shields/leather.jpg',
-          price: '$5',
+          price: '$35',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'For roleplay or LARP purposes '
         },
         {
-          title: 'Shields Dagger',
+          title: 'Templar shield',
           imageUrl: '/itemphotos/shields/templar.jpg',
-          price: '$5',
+          price: '$120',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: "Heavy Crusader's shield, made of steel and wood."
         },
         {
-          title: 'Shields Dagger',
+          title: 'Viking style shield',
           imageUrl: '/itemphotos/shields/viking.jpg',
-          price: '$5',
+          price: '$100',
           id: 3,
-          desc: 'Just in case you lose your spear or axe'
+          desc: 'Ask about adding Nordic runes to your shield at checkout.'
         },
         {
-          title: 'Book about the Stone age',
+          title: 'Holy Roman Empire coat of arms shield',
           imageUrl: '/itemphotos/shields/hre.jpg',
-          price: '$15',
+          price: '$120',
           id: 4,
-          desc: 'Unlike stone age people, you can read! So you should read about stone age people, because they cannot read about you. '
+          desc: 'Fit for Barbarossa himself.'
         }
       ] 
     }
