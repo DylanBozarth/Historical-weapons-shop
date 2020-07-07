@@ -67,8 +67,11 @@ class Roman extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="RomanInfo">
-        <h1>The Roman age</h1>
+        <div >
+        <h1 className="pageInfo">"The world survived the fall of the Roman empire and will no doubt outlast our own so much more splendid civilisation."
+
+          -James Buchan
+        </h1>
         <div className="ItemList row">
         {
              

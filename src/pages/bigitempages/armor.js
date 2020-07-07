@@ -109,8 +109,8 @@ class Armor extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="ArmorInfo">
-        <h1>The Armor age</h1>
+        <div >
+        <h1 className="pageInfo">"Fortitude is the marshal of thought, the armor of the will, and the fort of reason." -Francis Bacon</h1>
         <div className="ItemList row">
         {
              

@@ -81,8 +81,8 @@ class Shields extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="ShieldsInfo">
-        <h1>The Shields age</h1>
+        <div>
+        <h1 className="pageInfo">A strong shield can be the difference between life and death</h1>
         <div className="ItemList row">
         {
              

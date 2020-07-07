@@ -55,7 +55,9 @@ class Neolithic extends Component {
         return ( 
         <div className="FullPage Container"> 
         <div >
-        <h1 className="producttitle">The Neolithic age, also known as the stone age. Was the age where humans used stone as the primary material for all technology.</h1>
+        <h1 className="pageInfo">"For a novelist, the great thing about the Stone Age people is that we know virtually nothing about their beliefs - which means that I get to make it up! But it's still got to be plausible."
+
+-Michelle Paver</h1>
         <div className="ItemList row">
         {
              

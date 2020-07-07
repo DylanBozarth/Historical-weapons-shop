@@ -97,7 +97,9 @@ body {
   -webkit-text-stroke: .5px black; /* width and color */;
   font-family: 'Pangolin'
 }
-
+.pageInfo {
+  color: green;
+}
 .col-sm {
   
   color: white;

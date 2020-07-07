@@ -60,8 +60,10 @@ class Bronze extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="BronzeInfo">
-        <h1>The Bronze age, also known as the stone age. Was the age where humans used stone as the primary material for all technology.</h1>
+        <div>
+        <h1 className="pageInfo">"Bronze in the mirror of the form, wine of the mind.""
+
+-Aeschylus</h1>
         <div className="ItemList row">
         {
              

@@ -53,8 +53,10 @@ class ironage extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="ironageInfo">
-        <h1>The ironage age</h1>
+        <div >
+        <h1 className="pageInfo">"Iron rusts from disuse; water loses its purity from stagnation... even so does inaction sap the vigor of the mind."
+
+-Leonardo da Vinci</h1>
         <div className="ItemList row">
         {
              

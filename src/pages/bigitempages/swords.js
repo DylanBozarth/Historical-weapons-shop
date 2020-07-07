@@ -88,8 +88,8 @@ class Swords extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="SwordsInfo">
-        <h1>The Swords age</h1>
+        <div>
+        <h1 className="pageInfo">Swords from around the world</h1>
         <div className="ItemList row">
         {
              

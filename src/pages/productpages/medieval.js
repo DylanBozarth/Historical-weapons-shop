@@ -80,8 +80,10 @@ class Medieval extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="MedievalInfo">
-        <h1>The Medieval age</h1>
+        <div >
+        <h1 className="pageInfo">"Your chances of dying a violent death are 1/500th of what they used to be during medieval times."
+
+-Peter Diamandis</h1>
         <div className="ItemList row">
         {
              

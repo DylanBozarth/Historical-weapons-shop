@@ -60,8 +60,10 @@ class Renaissance extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="RenaissanceInfo">
-        <h1>The Renaissance age</h1>
+        <div>
+        <h1 className="pageInfo">"Not much was really invented during the Renaissance, if you don't count modern civilization."
+
+-P. J. O'Rourke</h1>
         <div className="ItemList row">
         {
              

@@ -102,8 +102,8 @@ class Archery extends Component {
     render() { 
         return ( 
         <div className="FullPage Container"> 
-        <div className="ArcheryInfo">
-        <h1>The Archery age</h1>
+        <div>
+        <h1 className="pageInfo">"Archery does not get difficult or hard to understand until the arrow misses." -Milan E. Elott</h1>
         <div className="ItemList row">
         {
              
