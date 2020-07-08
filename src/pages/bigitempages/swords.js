@@ -94,10 +94,10 @@ class Swords extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={id}> 
+              <div className="Card  col-lg-4" key={title}> 
               <div className="thumbnail">
                         <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" key={id}>
+                <div className="caption" >
                   <h3>{title}</h3>
                   <p className="flex-text desc">{desc} <br /> {price}</p>
                   <p>

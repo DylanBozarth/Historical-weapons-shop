@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export const Thing = () => (
   <div>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="navbarmaster">
       <Navbar.Brand>
         <Link to="/">Shop History</Link>
       </Navbar.Brand>

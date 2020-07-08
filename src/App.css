@@ -98,7 +98,13 @@ body {
   font-family: 'Pangolin'
 }
 .pageInfo {
-  color: green;
+  font-family: arial;
+  font-size: 1.6rem;
+  margin-bottom: 3%;
+  color: black;
+  font-weight: bolder;
+  font-style: cursive;
+  -webkit-text-stroke: .5px white;
 }
 .col-sm {
   
@@ -158,9 +164,12 @@ body {
  text-align: center;
 }
 .FullPage {
-  margin-left: 55px;
-  margin-right: 55px;
-height: 100%;
-width: 100%;
+  margin-left: 20%;
+  margin-right: 20%;
+max-height: 100%;
+max-width: 100%;
 
+}
+.navbarmaster {
+  position: fixed;
 }
