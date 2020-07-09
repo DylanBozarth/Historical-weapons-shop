@@ -49,6 +49,9 @@ export const Thing = () => (
             <Nav.Link>
               <Link to="/About">About us</Link>
             </Nav.Link>
+            <Nav.Link>
+              <Link to="/Sell">For Craftsmen</Link>
+            </Nav.Link>
           </Nav>
         </Nav>
 

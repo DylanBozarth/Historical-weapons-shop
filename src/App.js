@@ -15,12 +15,15 @@ import Shields from './pages/bigitempages/shields';
 import Swords from './pages/bigitempages/swords';
 import Cart from './pages/cart';
 import {Thing} from './pages/navbar';
+import Form from './pages/form'
+
 
 
 class App extends Component {
   state = { 
     cartAmount: 0
    }
+
   render() { 
     return ( <BrowserRouter>
       <div className="App">
@@ -38,6 +41,7 @@ class App extends Component {
         <Route path="/shields" component={Shields} />
         <Route path="/swords" component={Swords} />
         <Route path="/Cart" component={Cart} />
+        <Route path="/Sell" component={Form} />
       </div>
       </BrowserRouter> );
   }
