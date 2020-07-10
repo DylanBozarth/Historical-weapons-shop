@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 body {
- background-image: url('./homepagephotos/paper.jpg');
+ background-image: url('/website/public/homepagephotos/paper.jpg');
  background-size: 100% ;
 min-height: 100%;
 min-width: 100%;
@@ -32,48 +32,48 @@ min-width: 100%;
     text-align: center;
   }
 .neolithic {
-  background-image: url('./homepagephotos/neolithic.jpg');
+  background-image: url('/website/public/homepagephotos/neolithic.jpg');
   background-size: 100% 100%
 }
 .armor {
-  background-image: url('./homepagephotos/armor.jpg');
+  background-image: url('/homepagephotos/armor.jpg');
   background-size: 100% 100%
 }
 .swords {
-  background-image: url('./homepagephotos/swords.jpg');
+  background-image: url('/homepagephotos/swords.jpg');
   background-size: 100% 100%
 }
 .bronze {
-  background-image: url('./homepagephotos/bronze.jpg');
+  background-image: url('/homepagephotos/bronze.jpg');
   background-size: 100% 100%
 }
 .iron {
-  background-image: url('./homepagephotos/iron.jpg');
+  background-image: url('/homepagephotos/iron.jpg');
   background-size: 100% 100%
 }
 .roman {
-  background-image: url('./homepagephotos/roman.jpg');
+  background-image: url('/homepagephotos/roman.jpg');
   background-size: 100% 100%
 }
 .medieval {
-  background-image: url('./homepagephotos/medieval.jpg');
+  background-image: url('/homepagephotos/medieval.jpg');
   background-size: 100% 100%
 }
 .renaissance {
-  background-image: url('./homepagephotos/renaissance.jpg');
+  background-image: url('/homepagephotos/renaissance.jpg');
   background-size: 100% 100%
 }
 .archery {
-  background-image: url('./homepagephotos/archery.jpg');
+  background-image: url('/homepagephotos/archery.jpg');
   background-size: 100% 100%
 }
 .shields {
-  background-image: url('./homepagephotos/shields.jpg');
+  background-image: url('/homepagephotos/shields.jpg');
   background-size: 100% 100%
 }
 .banner  {
  
-  background-image: url('./banner.jpg');
+  background-image: url('/website/public/homepagephotos/banner.jpg');
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;

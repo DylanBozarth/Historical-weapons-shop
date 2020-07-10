@@ -31,7 +31,7 @@ export const Thing = () => (
               <Link to="/Renaissance"  className="dropdownlink">The Renaissance </Link>
             </NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Shop by Catagory"  id="collasible-nav-dropdown">
+          <NavDropdown title="Shop by Category"  id="collasible-nav-dropdown">
           <NavDropdown.Item>
               <Link to="/Archery"  className="dropdownlink">Archery</Link>
             </NavDropdown.Item>
