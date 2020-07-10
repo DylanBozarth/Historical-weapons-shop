@@ -9,7 +9,7 @@
   text-decoration: none;
 }
 body {
- background-image: url('/website/public/homepagephotos/paper.jpg');
+ background-image: url('/homepagephotos/paper.jpg');
  background-size: 100% ;
 min-height: 100%;
 min-width: 100%;
@@ -32,7 +32,7 @@ min-width: 100%;
     text-align: center;
   }
 .neolithic {
-  background-image: url('/website/public/homepagephotos/neolithic.jpg');
+  background-image: url('/homepagephotos/neolithic.jpg');
   background-size: 100% 100%
 }
 .armor {
@@ -73,7 +73,7 @@ min-width: 100%;
 }
 .banner  {
  
-  background-image: url('/website/public/homepagephotos/banner.jpg');
+  background-image: url('/homepagephotos/banner.jpg');
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;

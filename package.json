@@ -1,7 +1,6 @@
 {
   "name": "website",
   "version": "0.1.0",
-  "homepage": "https://github.com/Imstupidpleasehelp/Historical-weapons-shop",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
