@@ -15,7 +15,8 @@ import Shields from './pages/bigitempages/shields';
 import Swords from './pages/bigitempages/swords';
 import Cart from './pages/cart';
 import {Thing} from './pages/navbar';
-import Form from './pages/form'
+import Form from './pages/form';
+import {Footer} from './pages/footer';
 
 
 
@@ -40,8 +41,9 @@ class App extends Component {
         <Route path="/armor" component={Armor} />
         <Route path="/shields" component={Shields} />
         <Route path="/swords" component={Swords} />
-        <Route path="/Cart" component={Cart} />
+        <Route path="/Cart" component={Cart} cartAmount={this.state.cartAmount} />
         <Route path="/Sell" component={Form} />
+        <Footer />
       </div>
       </BrowserRouter> );
   }

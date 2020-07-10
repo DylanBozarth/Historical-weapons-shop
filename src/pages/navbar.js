@@ -6,51 +6,51 @@ export const Thing = () => (
   <div>
     <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className="navbarmaster">
       <Navbar.Brand>
-        <Link to="/">Shop History</Link>
+        <Link to="/" className="navbarlink">Shop History</Link>
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="mr-auto">
           <NavDropdown title="Shop by Era" id="collasible-nav-dropdown">
             <NavDropdown.Item>
-              <Link to="/Neolithic">Stone age</Link>
+              <Link to="/Neolithic" className="dropdownlink">Stone age</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Bronze">Bronze age</Link>
+              <Link to="/Bronze" className="dropdownlink">Bronze age</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Iron">Iron age</Link>
+              <Link to="/Iron"  className="dropdownlink">Iron age</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Roman">Roman age</Link>
+              <Link to="/Roman"  className="dropdownlink">Roman age</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Medieval">Medieval era</Link>
+              <Link to="/Medieval"  className="dropdownlink">Medieval era</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Renaissance">The Renaissance </Link>
+              <Link to="/Renaissance"  className="dropdownlink">The Renaissance </Link>
             </NavDropdown.Item>
           </NavDropdown>
-          <NavDropdown title="Shop by Catagory" id="collasible-nav-dropdown">
+          <NavDropdown title="Shop by Catagory"  id="collasible-nav-dropdown">
           <NavDropdown.Item>
-              <Link to="/Archery">Archery</Link>
+              <Link to="/Archery"  className="dropdownlink">Archery</Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Armor">Armor </Link>
+              <Link to="/Armor"  className="dropdownlink">Armor </Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Swords">Swords </Link>
+              <Link to="/Swords"  className="dropdownlink">Swords </Link>
             </NavDropdown.Item>
             <NavDropdown.Item>
-              <Link to="/Shields">Shields</Link>
+              <Link to="/Shields"  className="dropdownlink">Shields</Link>
             </NavDropdown.Item>
           </NavDropdown>{" "}
           <Nav>
             <Nav.Link>
-              <Link to="/About">About us</Link>
+              <Link to="/About" className="navbarlink">About us</Link>
             </Nav.Link>
             <Nav.Link>
-              <Link to="/Sell">For Craftsmen</Link>
+              <Link to="/Sell" className="navbarlink">For Craftsmen</Link>
             </Nav.Link>
           </Nav>
         </Nav>
@@ -58,9 +58,9 @@ export const Thing = () => (
         <Nav>
           <Nav.Link to="/Cart">
             <Link to="/Cart">
-              <i className="fa fa-shopping-cart" aria-hidden="true">
-                <br /> 
-                My cart
+              <i className="fa fa-shopping-cart" aria-hidden="true" >
+                
+                <p className="navbarlink">My cart</p>
               </i>
             </Link>
           </Nav.Link>

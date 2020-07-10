@@ -10,8 +10,9 @@
 }
 body {
  background-image: url('./homepagephotos/paper.jpg');
- background-size: 100% 100%;
-
+ background-size: 100% ;
+min-height: 100%;
+min-width: 100%;
  overflow-x: hidden;
 }
 @media only screen and (max-width: 600px) {
@@ -20,6 +21,15 @@ body {
   }
 
 
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
   }
 .neolithic {
   background-image: url('./homepagephotos/neolithic.jpg');
@@ -71,7 +81,7 @@ body {
   border: solid 1.5px black;
 }
 .hometitle {
-  background-color: black;
+  background-color: steelblue;
   text-align: center;
   color: whitesmoke;
   font-weight: bolder;
@@ -87,6 +97,21 @@ body {
   margin: 2%;
   z-index: 2;
   margin-top: 2%;
+}
+.link {
+  color: white;
+}
+.navbarlink {
+  color: white;
+}.navbarlink:hover{
+  transition: transform .8s;
+  transform: scale(1.2); 
+}
+.dropdownlink {
+  color: black;
+}
+.dropdownlink:hover {
+  color: blue;
 }
 .home-square-title{
   font-size: 7vh;
