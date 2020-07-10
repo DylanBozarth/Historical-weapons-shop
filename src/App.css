@@ -73,7 +73,7 @@ min-width: 100%;
 }
 .banner  {
  
-  background-image: url('/homepagephotos/banner.jpg');
+  background-image: url('/banner.jpg');
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
@@ -100,6 +100,9 @@ min-width: 100%;
 }
 .link {
   color: white;
+}
+.cartbox {
+  margin-bottom: -18px;
 }
 .navbarlink {
   color: white;

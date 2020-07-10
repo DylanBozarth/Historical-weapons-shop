@@ -3,7 +3,9 @@ import {Card, Button} from 'react-bootstrap';
 
 class Neolithic extends Component {
     constructor() {
+      
         super();
+      
     this.state = { items: [
         {
           title: 'Neolithic Rock art',
@@ -48,7 +50,8 @@ class Neolithic extends Component {
           id: 3,
           desc: 'If you want to learn more about this era.'
         }
-      ] 
+      ],
+      cartAmount: null 
     }
   }
     render() { 
@@ -70,7 +73,7 @@ class Neolithic extends Component {
       {desc} <br />
       {price}
     </Card.Text>
-    <Button variant="primary">Add to cart</Button>
+    <Button variant="primary" onClick={this.props.increasecart}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}

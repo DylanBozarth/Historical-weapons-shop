@@ -14,9 +14,10 @@ import Armor from './pages/bigitempages/armor';
 import Shields from './pages/bigitempages/shields';
 import Swords from './pages/bigitempages/swords';
 import Cart from './pages/cart';
-import {Thing} from './pages/navbar';
+import Thing from './pages/navbar';
 import Form from './pages/form';
 import {Footer} from './pages/footer';
+import { About } from './pages/about';
 
 
 
@@ -25,13 +26,25 @@ class App extends Component {
     cartAmount: 0
    }
 
+   increasecart = () => {
+    this.setState({cartAmount: this.state.cartAmount +1})
+   }
   render() { 
     return ( <BrowserRouter>
       <div className="App">
-        <Thing cart={this.state.cartAmount} />
+        <Thing cartAmount={this.state.cartAmount} />
         {/*<i className="fa fa-shopping-cart" aria-hidden="true"></i> */}
         <Route exact path="/" component={Homepage} />
-        <Route path="/Neolithic" component={Neolithic} />
+        <Route
+              path="/Neolithic"
+              render={props => (
+                <Neolithic
+                  {...props}
+                 cartAmount={this.state.cartAmount}
+                 increasecart={this.increasecart}
+                />
+              )}
+            />
         <Route path="/Bronze" component={Bronze} />
         <Route path="/Iron" component={Iron} />
         <Route path='/Roman' component={Roman} />
@@ -41,9 +54,19 @@ class App extends Component {
         <Route path="/armor" component={Armor} />
         <Route path="/shields" component={Shields} />
         <Route path="/swords" component={Swords} />
-        <Route path="/Cart" component={Cart} cartAmount={this.state.cartAmount} />
+        <Route
+              path="/Cart"
+              render={props => (
+                <Cart
+                  {...props}
+                 cartAmount={this.state.cartAmount}
+                />
+              )}
+            />
         <Route path="/Sell" component={Form} />
+        <Route path="/About" component={About} />
         <Footer />
+       
       </div>
       </BrowserRouter> );
   }
