@@ -99,7 +99,7 @@ class Thing extends Component {
                 <Link to="/Cart">
                   <div className="cartbox">
                     <p className="navbarlink">
-                      {this.props.cartAmount}{" "}
+                      {this.props.cart.length}
                       <i className="fa fa-shopping-cart" aria-hidden="true"></i>{" "}
                     </p>
                   </div>

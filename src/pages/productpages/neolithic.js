@@ -51,10 +51,15 @@ class Neolithic extends Component {
           desc: 'If you want to learn more about this era.'
         }
       ],
-      cartAmount: null,
       cart: []
+      
     }
   }
+  handleAddToCart = (e, items) => {
+    this.props.addToCart(items);
+    e.target.classList.add("btn-success");
+    e.target.innerHTML = "Added to cart";
+  };
     render() { 
         return ( 
         <div className="FullPage Container"> 
@@ -65,7 +70,7 @@ class Neolithic extends Component {
         <div className="ItemList row">
         {
              
-             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+             this.state.items.map(({title, imageUrl, desc, price }) => (
               <Card key={title} style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl}  width='10rem' height='180rem' />
   <Card.Body>
@@ -74,7 +79,7 @@ class Neolithic extends Component {
       {desc} <br />
       {price}
     </Card.Text>
-    <Button variant="primary" onClick={this.props.increasecart}>Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, this.state.items)} >Add to cart</Button>
   </Card.Body>
 </Card>
         ))}
