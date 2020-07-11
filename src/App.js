@@ -23,9 +23,29 @@ import { About } from './pages/about';
 
 class App extends Component {
   state = { 
-    cartAmount: 0
+    cartAmount: 0,
+    cart: [],
+total: 0
    }
+// serviceitems object, destructuring out the properties
+addToCart({ title, desc, price, image }) {
+  // using an updater function
+  this.setState(state => ({
+    cart: [
+      ...this.state.cart,
+      {
+        title,
+        desc,
+        price,
+        image
+      }
+    ],
+    // item price + current state total
+    total: state.total + price
+  }));
+  
 
+}
    increasecart = () => {
     this.setState({cartAmount: this.state.cartAmount +1})
    }

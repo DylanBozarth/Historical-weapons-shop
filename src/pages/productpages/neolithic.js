@@ -51,7 +51,8 @@ class Neolithic extends Component {
           desc: 'If you want to learn more about this era.'
         }
       ],
-      cartAmount: null 
+      cartAmount: null,
+      cart: []
     }
   }
     render() { 
