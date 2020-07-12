@@ -31,16 +31,18 @@ class App extends Component {
   };
   // serviceitems object, destructuring out the properties
   addToCart({ title, desc, price, image }) {
-    // using an updater function
+    // This is what is returning undefined 
     this.setState((state) => ({
       cart: [
         ...this.state.cart,
+        
         {
           title,
           desc,
           price,
           image,
         },
+        console.log(this.state.cart)
       ],
       
     }));
