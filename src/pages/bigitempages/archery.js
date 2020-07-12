@@ -99,6 +99,11 @@ class Archery extends Component {
       ] 
     }
   }
+  handleAddToCart = (e, items) => {
+    this.props.addToCart(items);
+    e.target.classList.add("btn-success");
+    e.target.innerHTML = "Added to cart";
+  };
     render() { 
         return ( 
         <div className="FullPage Container"> 
@@ -115,7 +120,7 @@ class Archery extends Component {
                   <h3>{title}</h3>
                   <p className="flex-text desc">{desc} <br /> {price}</p>
                   <p>
-                    <button className="btn btn-primary" href="#">Add to cart</button>
+                    <button className="btn btn-primary" href="#" onClick={e => this.handleAddToCart(e, this.state.items)} >Add to cart</button>
                   </p>
                 </div>
                 

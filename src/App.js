@@ -64,15 +64,88 @@ class App extends Component {
               />
             )}
           />
-          <Route path="/Bronze" component={Bronze} />
-          <Route path="/Iron" component={Iron} />
-          <Route path="/Roman" component={Roman} />
-          <Route path="/Medieval" component={Medieval} />
-          <Route path="/Renaissance" component={Renaissance} />
-          <Route path="/archery" component={Archery} />
-          <Route path="/armor" component={Armor} />
-          <Route path="/shields" component={Shields} />
-          <Route path="/swords" component={Swords} />
+          <Route
+            path="/Bronze"
+            render={(props) => (
+              <Bronze
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Iron"
+            render={(props) => (
+              <Iron
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Roman"
+            render={(props) => (
+              <Roman
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Medieval"
+            render={(props) => (
+              <Medieval
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Renaissance"
+            render={(props) => (
+              <Renaissance
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          
+          <Route
+            path="/Archery"
+            render={(props) => (
+              <Archery
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/armor"
+            render={(props) => (
+              <Armor
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Sheilds"
+            render={(props) => (
+              <Shields
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
+          <Route
+            path="/Swords"
+            render={(props) => (
+              <Swords
+                {...props}
+               addToCart={this.addToCart}
+              />
+            )}
+          />
           <Route
             path="/Cart"
             render={(props) => (

@@ -50,6 +50,11 @@ class ironage extends Component {
       ] 
     }
   }
+  handleAddToCart = (e, items) => {
+    this.props.addToCart(items);
+    e.target.classList.add("btn-success");
+    e.target.innerHTML = "Added to cart";
+  };
     render() { 
         return ( 
         <div className="FullPage Container"> 
@@ -69,7 +74,7 @@ class ironage extends Component {
       {desc} <br />
       {price}
     </Card.Text>
-    <Button variant="primary">Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, this.state.items)} >Add to cart</Button>
   </Card.Body>
 </Card>
         ))}
