@@ -29,10 +29,10 @@ class App extends Component {
     total: 0,
   }
   };
-  // serviceitems object, destructuring out the properties
+  
   addToCart({ title, desc, price, image }) {
     // This is what is returning undefined 
-    this.setState((state) => ({
+    this.setState({
       cart: [
         ...this.state.cart,
         
@@ -42,12 +42,13 @@ class App extends Component {
           price,
           image,
         },
-        console.log(this.state.cart)
       ],
       
-    }));
+    });
   }
-
+componentDidUpdate() {
+  console.log(this.state.cart)
+}
   render() {
     return (
       <BrowserRouter>

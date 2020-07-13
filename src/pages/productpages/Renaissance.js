@@ -81,7 +81,7 @@ class Renaissance extends Component {
       {desc} <br />
       {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, this.state.items)} >Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}

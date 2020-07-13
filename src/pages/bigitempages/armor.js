@@ -127,7 +127,7 @@ class Armor extends Component {
                   <h3>{title}</h3>
                   <p className="flex-text desc">{desc} <br /> {price}</p>
                   <p>
-                    <button className="btn btn-primary" href="#" onClick={e => this.handleAddToCart(e, this.state.items)} >Add to cart</button>
+                    <button className="btn btn-primary" href="#" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</button>
                   </p>
                 </div>
                 
