@@ -46,9 +46,7 @@ class App extends Component {
       
     });
   }
-componentDidUpdate() {
-  console.log(this.state.cart)
-}
+
   render() {
     return (
       <BrowserRouter>
