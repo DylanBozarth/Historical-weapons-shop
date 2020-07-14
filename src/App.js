@@ -13,7 +13,7 @@ import Archery from "./pages/bigitempages/archery";
 import Armor from "./pages/bigitempages/armor";
 import Shields from "./pages/bigitempages/shields";
 import Swords from "./pages/bigitempages/swords";
-import Cart from "./pages/cart";
+import Cart from "./pages/productpages/cart"
 import Thing from "./pages/navbar";
 import Form from "./pages/form";
 import { Footer } from "./pages/footer";

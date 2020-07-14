@@ -14,6 +14,7 @@ export const About = () => (
           height="250"
           width="300"
           src="./itemphotos/guy1.jpg"
+          alt="chad"
         ></img>
       </div>
       <div className="col-lg">
@@ -27,6 +28,7 @@ export const About = () => (
           height="250"
           width="300"
           src="./itemphotos/guy2.jpg"
+          alt="craig"
         ></img>
       </div>
     </div>
