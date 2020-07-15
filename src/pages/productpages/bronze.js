@@ -8,49 +8,49 @@ class Bronze extends Component {
         {
           title: "Bronze commoners' axe",
           imageUrl: '/itemphotos/bronzeage/axe.jpg',
-          price: '$25',
+          price: 25,
           id: 1,
           desc: "An simple axe made from a single piece of wood with a bronze blade attached."
         },
         {
           title: "Bronze Noblemens' axe",
           imageUrl: '/itemphotos/bronzeage/axefancy.jpg',
-          price: '$55',
+          price: 55,
           id: 2,
           desc: 'An ornate axe, made of bronze. .'
         },
         {
           title: 'Bronze Dagger',
           imageUrl: '/itemphotos/bronzeage/dagger.jpg',
-          price: '$15',
+          price: 15,
           id: 5,
           desc: 'An Egyptian style dagger from the bronze age '
         },
         {
           title: 'Bronze Spear Head',
           imageUrl: '/itemphotos/bronzeage/spearhead.jpg',
-          price: '$5',
+          price: 5,
           id: 3,
           desc: 'Solid Bronze'
         },
         {
           title: 'Bronze Age Sword',
           imageUrl: '/itemphotos/bronzeage/sword.jpg',
-          price: '$110',
+          price: 110,
           id: 4,
           desc: '23 inches in length, solid bronze '
         },
         {
           title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordbuffed.jpg',
-          price: '$250',
+          price: 250,
           id: 4,
           desc: "Modeled after what was most likely a king or governers' sword found in Egypt "
         },
         {
           title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordnice.jpg',
-          price: '$250',
+          price: 250,
           id: 4,
           desc: "Modeled after what was most likely a king or governers' sword, found in Syria"
         },

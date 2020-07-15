@@ -45,15 +45,16 @@ class App extends Component {
       total: this.state.total + price
     });
   }
-  Removefromcart({ title, desc, price, image, id }) {
-   
+  // the item id and price
+  Removefromcart = (id, price) => {
+    // using an updater function
     this.setState(state => ({
-     
+      // keep everything except the item with the id that was passed in
       cart: this.state.cart.filter(item => item.id !== id),
-      
-      total: state.total - price
+      // item price - current state total
+     total: state.total - price
     }));
-  }
+  };
     
   
 

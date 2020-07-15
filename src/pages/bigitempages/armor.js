@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import {Card, Button} from 'react-bootstrap';
 
 class Armor extends Component {
     constructor() {
@@ -120,20 +121,17 @@ class Armor extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <div className="Card  col-lg-4" key={title}> 
-              <div className="thumbnail">
-                        <img className="cardImg" height='150' width='200' src={`${imageUrl}`} alt='' />
-                <div className="caption" >
-                  <h3>{title}</h3>
-                  <p className="flex-text desc">{desc} <br /> {price}</p>
-                  <p>
-                    <button className="btn btn-primary" href="#" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</button>
-                  </p>
-                </div>
-                
-              </div>
-            
-            </div>
+              <Card key={title}  style={{ width: '18rem'}}>
+  <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
+  <Card.Body>
+    <Card.Title>{title}</Card.Title>
+    <Card.Text>
+      {desc} <br />
+      {price}
+    </Card.Text>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
+  </Card.Body>
+</Card>
         ))}
             </div> 
             
