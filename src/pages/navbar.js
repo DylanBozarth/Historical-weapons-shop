@@ -81,16 +81,16 @@ class Thing extends Component {
                 </NavDropdown.Item>
               </NavDropdown>{" "}
               <Nav>
-                
-                  <Link to="/About"><Nav.Link>
+                <Nav.Link>
+                  <Link to="/About">
                     <p className="navbarlink">About us</p>
-                  </Nav.Link></Link>
-                
-                
-                  <Link to="/Sell"><Nav.Link>
+                  </Link>
+                </Nav.Link>
+                <Nav.Link>
+                  <Link to="/Sell">
                     <p className="navbarlink">For Craftsmen</p>
-                  </Nav.Link></Link>
-                
+                  </Link>
+                </Nav.Link>
               </Nav>
             </Nav>
 

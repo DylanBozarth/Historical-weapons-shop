@@ -31,7 +31,6 @@ class App extends Component {
   };
   
   addToCart({ title, desc, price, image }) {
-    // This is what is returning undefined 
     this.setState({
       cart: [
         ...this.state.cart,
@@ -43,9 +42,20 @@ class App extends Component {
           image,
         },
       ],
-      
+      total: this.state.total + price
     });
   }
+  Removefromcart({ title, desc, price, image, id }) {
+   
+    this.setState(state => ({
+     
+      cart: this.state.cart.filter(item => item.id !== id),
+      
+      total: state.total - price
+    }));
+  }
+    
+  
 
   render() {
     return (
@@ -128,7 +138,7 @@ class App extends Component {
             )}
           />
           <Route
-            path="/Sheilds"
+            path="/Shields"
             render={(props) => (
               <Shields
                 {...props}
@@ -148,7 +158,7 @@ class App extends Component {
           <Route
             path="/Cart"
             render={(props) => (
-              <Cart {...props} cart={this.state.cart} />
+              <Cart {...props} cart={this.state.cart} Removefromcart={this.Removefromcart} />
             )}
           />
           <Route path="/Sell" component={Form} />

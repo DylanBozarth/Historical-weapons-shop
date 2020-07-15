@@ -13,6 +13,8 @@ class Cart extends Component {
   componentDidMount() {
       console.log(this.props.cart)
   }
+ 
+  
     render() { 
         if (this.props.cart.length !== 0) {
          
@@ -26,15 +28,16 @@ class Cart extends Component {
     {desc} <br />
     {price}
   </Card.Text>
-  <Button variant="primary" >Add to cart</Button>
+  <Button variant="primary" onClick={this.props.Removefromcart}>Remove from cart</Button>
 </Card.Body>
 </Card> 
 
          ));
           return (
+            <div className="FullPage Container">
             <div className="ItemList row"> 
-            {cartitems}<h1>Your total is: {this.state.total}</h1></div>
-
+            {cartitems}</div>
+<h1 className="yourtotal"> Your total is: {this.state.total}</h1></div>
           )
         }
         else {

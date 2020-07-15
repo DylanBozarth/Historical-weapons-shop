@@ -8,6 +8,10 @@
 .carticon {
   text-decoration: none;
 }
+.yourtotal {
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
 body {
  background-image: url('/homepagephotos/paper.jpg');
  background-size: 100% ;
@@ -112,6 +116,7 @@ min-width: 100%;
 }
 .dropdownlink {
   color: black;
+  padding: 5px;
 }
 .dropdownlink:hover {
   color: blue;
