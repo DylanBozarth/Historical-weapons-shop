@@ -23,35 +23,35 @@ class Bronze extends Component {
           title: 'Bronze Dagger',
           imageUrl: '/itemphotos/bronzeage/dagger.jpg',
           price: 15,
-          id: 5,
+          id: 3,
           desc: 'An Egyptian style dagger from the bronze age '
         },
         {
           title: 'Bronze Spear Head',
           imageUrl: '/itemphotos/bronzeage/spearhead.jpg',
           price: 5,
-          id: 3,
+          id: 4,
           desc: 'Solid Bronze'
         },
         {
           title: 'Bronze Age Sword',
           imageUrl: '/itemphotos/bronzeage/sword.jpg',
           price: 110,
-          id: 4,
+          id: 5,
           desc: '23 inches in length, solid bronze '
         },
         {
           title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordbuffed.jpg',
           price: 250,
-          id: 4,
+          id: 6,
           desc: "Modeled after what was most likely a king or governers' sword found in Egypt "
         },
         {
           title: 'Ornate Bronze Sword',
           imageUrl: '/itemphotos/bronzeage/swordnice.jpg',
           price: 250,
-          id: 4,
+          id: 7,
           desc: "Modeled after what was most likely a king or governers' sword, found in Syria"
         },
       ] 
@@ -73,7 +73,7 @@ class Bronze extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <Card key={title}  style={{ width: '18rem'}}>
+              <Card key={id} id={id}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title>{title}</Card.Title>
