@@ -36,7 +36,10 @@ export const About = () => (
       {" "}
       Our passion has always been history. Whether it was researching, teaching,
       or collecting. In our youth there were plenty of resources for research,
-      however for collecting we were left on our own. {" "}
+      however for collecting we were left on our own. That's why we started
+      History's Armory. To provide the common man with the equipment nessisary
+      to be counted amongst the ranks of legitimate collectors, and not for an
+      arm and a leg either!{" "}
     </p>
   </div>
 );

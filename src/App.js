@@ -13,28 +13,27 @@ import Archery from "./pages/bigitempages/archery";
 import Armor from "./pages/bigitempages/armor";
 import Shields from "./pages/bigitempages/shields";
 import Swords from "./pages/bigitempages/swords";
-import Cart from "./pages/productpages/cart"
+import Cart from "./pages/productpages/cart";
 import Thing from "./pages/navbar";
 import Form from "./pages/form";
 import { Footer } from "./pages/footer";
 import { About } from "./pages/about";
 
 class App extends Component {
-  
   constructor(props) {
-  super(props);
-  this.addToCart = this.addToCart.bind(this);
-  this.state = {
-    cart: [],
-    total: 0,
+    super(props);
+    this.addToCart = this.addToCart.bind(this);
+    this.state = {
+      cart: [],
+      total: 0,
+    };
   }
-  };
-  
+
   addToCart({ title, desc, price, image }) {
     this.setState({
       cart: [
         ...this.state.cart,
-        
+
         {
           title,
           desc,
@@ -42,7 +41,7 @@ class App extends Component {
           image,
         },
       ],
-      total: this.state.total + price
+      total: this.state.total + price,
     });
   }
   // the item id and price
@@ -53,9 +52,6 @@ class App extends Component {
       //total: state.total - price
     }));
   };
- 
-    
-  
 
   render() {
     return (
@@ -67,98 +63,62 @@ class App extends Component {
           <Route
             path="/Neolithic"
             render={(props) => (
-              <Neolithic
-                {...props}
-               addToCart={this.addToCart}
-              />
+              <Neolithic {...props} addToCart={this.addToCart} />
             )}
           />
           <Route
             path="/Bronze"
-            render={(props) => (
-              <Bronze
-                {...props}
-               addToCart={this.addToCart}
-              />
-            )}
+            render={(props) => <Bronze {...props} addToCart={this.addToCart} />}
           />
           <Route
             path="/Iron"
-            render={(props) => (
-              <Iron
-                {...props}
-               addToCart={this.addToCart}
-              />
-            )}
+            render={(props) => <Iron {...props} addToCart={this.addToCart} />}
           />
           <Route
             path="/Roman"
-            render={(props) => (
-              <Roman
-                {...props}
-               addToCart={this.addToCart}
-              />
-            )}
+            render={(props) => <Roman {...props} addToCart={this.addToCart} />}
           />
           <Route
             path="/Medieval"
             render={(props) => (
-              <Medieval
-                {...props}
-               addToCart={this.addToCart}
-              />
+              <Medieval {...props} addToCart={this.addToCart} />
             )}
           />
           <Route
             path="/Renaissance"
             render={(props) => (
-              <Renaissance
-                {...props}
-               addToCart={this.addToCart}
-              />
+              <Renaissance {...props} addToCart={this.addToCart} />
             )}
           />
-          
+
           <Route
             path="/Archery"
             render={(props) => (
-              <Archery
-                {...props}
-               addToCart={this.addToCart}
-              />
+              <Archery {...props} addToCart={this.addToCart} />
             )}
           />
           <Route
             path="/armor"
-            render={(props) => (
-              <Armor
-                {...props}
-               addToCart={this.addToCart}
-              />
-            )}
+            render={(props) => <Armor {...props} addToCart={this.addToCart} />}
           />
           <Route
             path="/Shields"
             render={(props) => (
-              <Shields
-                {...props}
-               addToCart={this.addToCart}
-              />
+              <Shields {...props} addToCart={this.addToCart} />
             )}
           />
           <Route
             path="/Swords"
-            render={(props) => (
-              <Swords
-                {...props}
-               addToCart={this.addToCart}
-              />
-            )}
+            render={(props) => <Swords {...props} addToCart={this.addToCart} />}
           />
           <Route
             path="/Cart"
             render={(props) => (
-              <Cart {...props} cart={this.state.cart} Removefromcart={this.Removefromcart} />
+              <Cart
+                {...props}
+                cart={this.state.cart}
+                Removefromcart={this.Removefromcart}
+              />
             )}
           />
           <Route path="/Sell" component={Form} />
