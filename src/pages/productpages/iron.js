@@ -9,42 +9,36 @@ class ironage extends Component {
           title: 'iron age axe',
           imageUrl: "/itemphotos/ironage/axe.jpg",
           price: '$45',
-          id: 1,
           desc: "Iron axes are keep their edges significantly beter than bronze."
         },
         {
           title: 'iron dagger',
           imageUrl: '/itemphotos/ironage/dagger.jpg',
           price: '$15',
-          id: 2,
           desc: 'Excellent for concealed carry. '
         },
         {
           title: 'Iron hammer',
           imageUrl: '/itemphotos/ironage/hammer.jpg',
           price: '$30',
-          id: 5,
           desc: 'The most common tool from this era.'
         },
         {
           title: 'Iron sword',
           imageUrl: '/itemphotos/ironage/sword.jpg',
           price: '$75',
-          id: 3,
           desc: 'Retains its edge better than bronze, but not as well as later swords.'
         },
         {
           title: 'Irish style Iron sword',
           imageUrl: '/itemphotos/ironage/sword irish.jpg',
           price: '$150',
-          id: 4,
           desc: "Modeled after a historic unknown Irish lords' sword"
         },
         {
           title: 'Iron throwing axe',
           imageUrl: '/itemphotos/ironage/throwingaxe.jpg',
           price: '$15',
-          id: 4,
           desc: 'Best used with the proper training. '
         },
       ] 
@@ -65,7 +59,7 @@ class ironage extends Component {
         <div className="ItemList row">
         {
              
-             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+             this.state.items.map(({title, imageUrl, desc, price }) => (
               <Card key={title}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
