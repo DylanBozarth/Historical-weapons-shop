@@ -26,6 +26,7 @@ class App extends Component {
     this.state = {
       cart: [],
       total: 0,
+      newCart: []
     };
   }
 
@@ -46,11 +47,16 @@ class App extends Component {
   }
   // the item id and price
   Removefromcart = ({ title, desc, price, image, id }) => {
+    console.log('id has typeof' + typeof id);
     this.setState(state => ({
-      cart: this.state.cart.filter(item => item.id !== id),
+      cart: this.state.cart.filter(item => {
+        console.log('item.id has typeof' + typeof item.id);
+        return item.id !== id
+      }),
 
       //total: state.total - price
     }));
+    
   };
 
   render() {
@@ -118,6 +124,7 @@ class App extends Component {
                 {...props}
                 cart={this.state.cart}
                 Removefromcart={this.Removefromcart}
+                total={this.state.total}
               />
             )}
           />

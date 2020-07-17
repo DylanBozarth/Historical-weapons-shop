@@ -79,7 +79,7 @@ class Bronze extends Component {
     <Card.Title>{title}</Card.Title>
     <Card.Text>
       {desc} <br />
-      {price}
+     $ {price}
     </Card.Text>
     <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>

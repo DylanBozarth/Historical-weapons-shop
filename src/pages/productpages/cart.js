@@ -7,20 +7,21 @@ class Cart extends Component {
         super();
     this.state = { 
       cart: [],
-      total: 0
+      total: null
     }
   }
   componentDidMount() {
       console.log(this.props.cart)
+      
   }
- 
+
   
     render() { 
         if (this.props.cart.length !== 0) {
          
-          var cartitems = this.props.cart.map(({title, image, desc, price }) => (
+          var cartitems = this.props.cart.map(({title, image, desc, price, id }) => (
            
-            <Card key={title}  style={{ width: '18rem'}}>
+            <Card key={title} id={id}  style={{ width: '18rem'}}>
 <Card.Img variant="top" src={image} width='10rem' height='180rem' />
 <Card.Body>
   <Card.Title>{title}</Card.Title>
@@ -28,7 +29,7 @@ class Cart extends Component {
     {desc} <br />
     {price}
   </Card.Text>
-  <Button variant="primary" onClick={this.props.Removefromcart}>Remove from cart</Button>
+  <Button variant="btn btn-warning" onClick={this.props.Removefromcart}>Remove from cart</Button>
 </Card.Body>
 </Card> 
 
@@ -37,7 +38,7 @@ class Cart extends Component {
             <div className="FullPage Container">
             <div className="ItemList row"> 
             {cartitems}</div>
-<h1 className="yourtotal"> Your total is: {this.state.total}</h1></div>
+<h1 className="yourtotal"> Your total is: $ {this.props.total}</h1></div>
           )
         }
         else {

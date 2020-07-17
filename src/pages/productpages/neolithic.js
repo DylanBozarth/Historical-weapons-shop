@@ -10,35 +10,35 @@ class Neolithic extends Component {
         {
           title: 'Neolithic Rock art',
           imageUrl: "/itemphotos/stoneage/art.jpg",
-          price: '$160',
+          price: 160,
           id: 1,
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
           title: 'Neolithic axe',
           imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
-          price: '$18',
+          price: 18,
           id: 2,
           desc: 'One of the first tools ever made, looks great on a wall.'
         },
         {
           title: 'Stone dagger',
           imageUrl: './itemphotos/stoneage/dagger.jpg',
-          price: '$35',
+          price: 35,
           id: 3,
           desc: 'Sharpened stone.'
         },
         {
           title: 'Stone Hammer',
           imageUrl: './itemphotos/stoneage/stonehammer.jpg',
-          price: '$25',
+          price: 25,
           id: 4,
           desc: 'Most likely used as a cooking tool.'
         },
         {
           title: 'Neolithic Spear',
           imageUrl: './itemphotos/stoneage/spear.jpg',
-          price: '$15',
+          price: 15,
           id: 3,
           desc: 'A rock on the end of a stick, Classic.'
         },
@@ -46,7 +46,7 @@ class Neolithic extends Component {
         {
           title: 'Book about the stone age',
           imageUrl: './itemphotos/stoneage/book.jpg',
-          price: '$10',
+          price: 10,
           id: 3,
           desc: 'If you want to learn more about this era.'
         }
@@ -77,7 +77,7 @@ class Neolithic extends Component {
     <Card.Title>{title}</Card.Title>
     <Card.Text>
       {desc} <br />
-      {price}
+     $ {price}
     </Card.Text>
     <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>

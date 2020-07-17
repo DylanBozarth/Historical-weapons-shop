@@ -8,49 +8,49 @@ class Renaissance extends Component {
         {
           title: 'Renaissance Decorative sword',
           imageUrl: "/itemphotos/Renaissance/decorativeswords.jpg",
-          price: '$300',
+          price: 300,
           id: 1,
           desc: "With the advent of gunpowder, swords went from being an essential weapon to more of a status symbol."
         },
         {
           title: "Duelers' swords set",
           imageUrl: '/itemphotos/Renaissance/duelers.jpg',
-          price: '$450',
+          price: 450,
           id: 2,
           desc: 'Settle an argument the proper way with these two dueling swords. '
         },
         {
           title: 'Single Dueling Sword',
           imageUrl: '/itemphotos/Renaissance/duelsword.jpg',
-          price: '$150',
+          price: 150,
           id: 5,
           desc: 'Looks great over the fireplace'
         },
         {
           title: 'Flintlock rifle.',
           imageUrl: '/itemphotos/Renaissance/flintlock.jpg',
-          price: '$250',
+          price: 250,
           id: 3,
           desc: 'An improvement on matchlocks, less likely to misfire in the rain. No background check is needed for black powder firearms.'
         },
         {
           title: 'Matchlock Pistol',
           imageUrl: '/itemphotos/Renaissance/matchlock.jpg',
-          price: '$180',
+          price: 180,
           id: 3,
           desc: 'Not reccomended for long distances. No background check is needed for black powder firearms.'
         },
         {
           title: 'Matchlock Rifle',
           imageUrl: '/itemphotos/Renaissance/matchlockrifle.jpg',
-          price: '$260',
+          price: 260,
           id: 3,
           desc: 'Looks great over a fireplace. No background check is needed for black powder firearms.'
         },
         {
           title: 'Late middle ages Halberd.',
           imageUrl: '/itemphotos/Renaissance/halberd.jpg',
-          price: '$180',
+          price: 180,
           id: 4,
           desc: 'Still in use by the Swiss guard. '
         }
@@ -79,7 +79,7 @@ class Renaissance extends Component {
     <Card.Title>{title}</Card.Title>
     <Card.Text>
       {desc} <br />
-      {price}
+    $  {price}
     </Card.Text>
     <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>

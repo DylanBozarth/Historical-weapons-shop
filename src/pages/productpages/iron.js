@@ -8,37 +8,37 @@ class ironage extends Component {
         {
           title: 'iron age axe',
           imageUrl: "/itemphotos/ironage/axe.jpg",
-          price: '$45',
+          price: 45,
           desc: "Iron axes are keep their edges significantly beter than bronze."
         },
         {
           title: 'iron dagger',
           imageUrl: '/itemphotos/ironage/dagger.jpg',
-          price: '$15',
+          price: 15,
           desc: 'Excellent for concealed carry. '
         },
         {
           title: 'Iron hammer',
           imageUrl: '/itemphotos/ironage/hammer.jpg',
-          price: '$30',
+          price: 30,
           desc: 'The most common tool from this era.'
         },
         {
           title: 'Iron sword',
           imageUrl: '/itemphotos/ironage/sword.jpg',
-          price: '$75',
+          price: 75,
           desc: 'Retains its edge better than bronze, but not as well as later swords.'
         },
         {
           title: 'Irish style Iron sword',
           imageUrl: '/itemphotos/ironage/sword irish.jpg',
-          price: '$150',
+          price: 150,
           desc: "Modeled after a historic unknown Irish lords' sword"
         },
         {
           title: 'Iron throwing axe',
           imageUrl: '/itemphotos/ironage/throwingaxe.jpg',
-          price: '$15',
+          price: 15,
           desc: 'Best used with the proper training. '
         },
       ] 
@@ -66,7 +66,7 @@ class ironage extends Component {
     <Card.Title>{title}</Card.Title>
     <Card.Text>
       {desc} <br />
-      {price}
+     $ {price}
     </Card.Text>
     <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>

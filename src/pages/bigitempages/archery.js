@@ -9,91 +9,91 @@ class Archery extends Component {
         {
           title: 'Archery arm guard',
           imageUrl: "/itemphotos/archery/armguard.jpg",
-          price: '$15',
+          price: 15,
           id: 1,
           desc: "Made from leather. "
         },
         {
           title: 'Bronze arrowhead',
           imageUrl: '/itemphotos/archery/bronzearrowhead.png',
-          price: '$5',
+          price: 5,
           id: 2,
           desc: 'Solid bronze'
         },
         {
           title: 'Bronze Crossbow',
           imageUrl: '/itemphotos/archery/bronzecrossbow.jpg',
-          price: '$150',
+          price: 150,
           id: 5,
           desc: 'Solid bronze. '
         },
         {
           title: 'Chinese style repeater crossbow',
           imageUrl: '/itemphotos/archery/chinesecrossbow.jpg',
-          price: '$250',
+          price: 250,
           id: 3,
           desc: 'A hail of crossbow bolts is great fun. '
         },
         {
           title: 'Copper thumb ring.',
           imageUrl: '/itemphotos/archery/copperthumbring.jpg',
-          price: '$15',
+          price: 15,
           id: 3,
           desc: 'How ancient archers used to use heavy bows for hours on end.'
         },
         {
           title: 'Hip quiver',
           imageUrl: '/itemphotos/archery/hipquiver.jpg',
-          price: '$45',
+          price: 45,
           id: 3,
           desc: "This does not go on your back, this isn't hollywood!"
         },
         {
           title: 'Hunting bow',
           imageUrl: '/itemphotos/archery/huntingbow.jpg',
-          price: '$45',
+          price: 45,
           id: 3,
           desc: '45lbs draw weight. '
         },
         {
           title: 'Iron arrowhead',
           imageUrl: '/itemphotos/archery/ironarrowhead.jpg',
-          price: '$5',
+          price: 5,
           id: 3,
           desc: 'Sharper than bronze, but vulnerable to rust.'
         },
         {
           title: 'Medieval crossbow',
           imageUrl: '/itemphotos/archery/medcrossbow.jpg',
-          price: '$110',
+          price: 110,
           id: 3,
           desc: '700lbs draw weight. '
         },
         {
           title: 'Mongolian horsebow.',
           imageUrl: '/itemphotos/archery/mongolian.jpg',
-          price: '$60',
+          price: 60,
           id: 3,
           desc: '45lbs draw weight, short enough to use on a horse.'
         },
         {
           title: 'Stone arrowhead',
           imageUrl: '/itemphotos/archery/stonearrowhead.jpg',
-          price: '$5',
+          price: 5,
           id: 3,
           desc: 'Native American style'
         },
         {
           title: 'Stone bow',
           imageUrl: '/itemphotos/archery/stonebox.jpg',
-          price: '$80',
+          price: 80,
           id: 3,
           desc: 'Not made of stone, made for shooting stones. Great for hunting small game or target practice.'
         },
         {
           title: 'Wooden arrows, 50 count',
           imageUrl: '/itemphotos/archery/woodenarrows.jpg',
-          price: '$120',
+          price: 120,
           id: 3,
           desc: 'Made from poplar wood. Tipless'
         }
@@ -120,7 +120,7 @@ class Archery extends Component {
     <Card.Title>{title}</Card.Title>
     <Card.Text>
       {desc} <br />
-      {price}
+     $ {price}
     </Card.Text>
     <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
   </Card.Body>
