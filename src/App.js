@@ -46,18 +46,16 @@ class App extends Component {
     });
   }
   // the item id and price
-  Removefromcart = ({ title, desc, price, image, id }) => {
-    console.log('id has typeof' + typeof id);
-    this.setState(state => ({
-      cart: this.state.cart.filter(item => {
-        console.log('item.id has typeof' + typeof item.id);
-        return item.id !== id
-      }),
+  
+   
+ // the item id and price
+ Removefromcart = ({ title, desc, price, image, id }) => {
+  this.setState(state => ({
+    cart: this.state.cart.filter(item => item.id !== id),
 
-      //total: state.total - price
-    }));
-    
-  };
+    //total: state.total - price
+  }));
+};
 
   render() {
     return (
