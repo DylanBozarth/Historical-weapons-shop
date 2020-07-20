@@ -11,35 +11,35 @@ class Neolithic extends Component {
           title: 'Neolithic Rock art',
           imageUrl: "/itemphotos/stoneage/art.jpg",
           price: 160,
-          id: 1,
+          id: 'Neolithic Rock art',
           desc: "Own a (reproduction) priceless piece of human history. "
         },
         {
           title: 'Neolithic axe',
           imageUrl: './itemphotos/stoneage/stoneaxe.jpg',
           price: 18,
-          id: 2,
+          id: 'Neolithic axe',
           desc: 'One of the first tools ever made, looks great on a wall.'
         },
         {
           title: 'Stone dagger',
           imageUrl: './itemphotos/stoneage/dagger.jpg',
           price: 35,
-          id: 3,
+          id: 'Stone dagger',
           desc: 'Sharpened stone.'
         },
         {
           title: 'Stone Hammer',
           imageUrl: './itemphotos/stoneage/stonehammer.jpg',
           price: 25,
-          id: 4,
+          id: 'Stone Hammer',
           desc: 'Most likely used as a cooking tool.'
         },
         {
           title: 'Neolithic Spear',
           imageUrl: './itemphotos/stoneage/spear.jpg',
           price: 15,
-          id: 3,
+          id: 'Neolithic Spear',
           desc: 'A rock on the end of a stick, Classic.'
         },
         
@@ -47,7 +47,7 @@ class Neolithic extends Component {
           title: 'Book about the stone age',
           imageUrl: './itemphotos/stoneage/book.jpg',
           price: 10,
-          id: 3,
+          id: 'Book about the stone age',
           desc: 'If you want to learn more about this era.'
         }
       ],
@@ -70,8 +70,8 @@ class Neolithic extends Component {
         <div className="ItemList row">
         {
              
-             this.state.items.map(({title, imageUrl, desc, price }) => (
-              <Card key={title} style={{ width: '18rem'}}>
+             this.state.items.map(({title, imageUrl, desc, price, id }) => (
+              <Card key={title} id={id} style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl}  width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title>{title}</Card.Title>
@@ -79,7 +79,7 @@ class Neolithic extends Component {
       {desc} <br />
      $ {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price, id })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}

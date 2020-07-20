@@ -73,7 +73,7 @@ class Renaissance extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <Card key={title}  style={{ width: '18rem'}}>
+              <Card key={title} id={id}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl}width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title>{title}</Card.Title>
@@ -81,7 +81,7 @@ class Renaissance extends Component {
       {desc} <br />
     $  {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price, id })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}

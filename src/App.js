@@ -30,12 +30,13 @@ class App extends Component {
     };
   }
 
-  addToCart({ title, desc, price, image }) {
+  addToCart({ title, desc, price, image, id }) {
     this.setState({
       cart: [
         ...this.state.cart,
 
         {
+          id,
           title,
           desc,
           price,

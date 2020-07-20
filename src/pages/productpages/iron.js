@@ -9,36 +9,42 @@ class ironage extends Component {
           title: 'iron age axe',
           imageUrl: "/itemphotos/ironage/axe.jpg",
           price: 45,
+          id: 'iron age axe',
           desc: "Iron axes are keep their edges significantly beter than bronze."
         },
         {
           title: 'iron dagger',
           imageUrl: '/itemphotos/ironage/dagger.jpg',
           price: 15,
+          id: 'iron dagger',
           desc: 'Excellent for concealed carry. '
         },
         {
           title: 'Iron hammer',
           imageUrl: '/itemphotos/ironage/hammer.jpg',
           price: 30,
+          id: 'Iron hammer',
           desc: 'The most common tool from this era.'
         },
         {
           title: 'Iron sword',
           imageUrl: '/itemphotos/ironage/sword.jpg',
           price: 75,
+          id: 'Iron sword',
           desc: 'Retains its edge better than bronze, but not as well as later swords.'
         },
         {
           title: 'Irish style Iron sword',
           imageUrl: '/itemphotos/ironage/sword irish.jpg',
           price: 150,
+          id: 'Irish style Iron sword',
           desc: "Modeled after a historic unknown Irish lords' sword"
         },
         {
           title: 'Iron throwing axe',
           imageUrl: '/itemphotos/ironage/throwingaxe.jpg',
           price: 15,
+          id: 'Iron throwing axe',
           desc: 'Best used with the proper training. '
         },
       ] 
@@ -59,7 +65,7 @@ class ironage extends Component {
         <div className="ItemList row">
         {
              
-             this.state.items.map(({title, imageUrl, desc, price }) => (
+             this.state.items.map(({title, imageUrl, desc, price, id}) => (
               <Card key={title}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
@@ -68,7 +74,7 @@ class ironage extends Component {
       {desc} <br />
      $ {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price })}>Add to cart</Button>
+    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price, id })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}
