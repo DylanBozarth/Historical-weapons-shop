@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Card, Button } from "react-bootstrap";
-
+import { Link } from "react-router-dom";
 class Cart extends Component {
   constructor() {
     super();
     this.state = {
       cart: [],
-      total: null,
+      total: null
     };
   }
   
@@ -14,8 +14,7 @@ class Cart extends Component {
     console.log(this.props.cart);
     
   }
-  
-
+ 
   render() {
     if (this.props.cart.length !== 0) {
       var cartitems = this.props.cart.map(
@@ -23,7 +22,7 @@ class Cart extends Component {
           <Card key={title} id={id} style={{ width: "18rem" }}>
             <Card.Img variant="top" src={image} width="10rem" height="180rem" />
             <Card.Body>
-              <Card.Title>{title}</Card.Title>
+              <Card.Title className="title">{title}</Card.Title>
               <Card.Text>
                 {desc} <br />
                 {price}
@@ -41,7 +40,7 @@ class Cart extends Component {
       return (
         <div className="FullPage Container">
           <div className="ItemList row">{cartitems}</div>
-          <h1 className="yourtotal"> Your total is: $ {this.props.total}</h1>
+          <Link to="/Checkout"><button className="btn btn-success checkoutbutton">Checkout</button></Link>
         </div>
       );
     } else {

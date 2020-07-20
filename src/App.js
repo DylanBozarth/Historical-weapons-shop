@@ -18,6 +18,7 @@ import Thing from "./pages/navbar";
 import Form from "./pages/form";
 import { Footer } from "./pages/footer";
 import { About } from "./pages/about";
+import {Checkout } from  './pages/checkout'
 
 class App extends Component {
   constructor(props) {
@@ -42,8 +43,8 @@ class App extends Component {
           price,
           image,
         },
-      ],
-      //total: this.state.total + price,
+      ]
+      
     });
   }
   // the item id and price
@@ -54,7 +55,8 @@ class App extends Component {
       cart: this.state.cart.filter((value) => value.id !== id),
 
        
-       
+      
+      
     }));
    
   };
@@ -130,6 +132,7 @@ class App extends Component {
           />
           <Route path="/Sell" component={Form} />
           <Route path="/About" component={About} />
+          <Route path="/Checkout" component={Checkout} />
           <Footer />
         </div>
       </BrowserRouter>

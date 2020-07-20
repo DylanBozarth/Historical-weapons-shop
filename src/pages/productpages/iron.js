@@ -69,7 +69,7 @@ class ironage extends Component {
               <Card key={title}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
-    <Card.Title>{title}</Card.Title>
+    <Card.Title className="title">{title}</Card.Title>
     <Card.Text>
       {desc} <br />
      $ {price}

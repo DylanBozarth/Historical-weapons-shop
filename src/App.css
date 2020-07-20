@@ -8,9 +8,18 @@
 .carticon {
   text-decoration: none;
 }
-.yourtotal {
+.checkoutbutton {
   margin-bottom: 10%;
   margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.checkouttext {
+  color: white; 
+  font-size: 2rem;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 body {
  background-image: url('/homepagephotos/paper.jpg');
@@ -90,6 +99,7 @@ min-width: 100%;
   color: whitesmoke;
   font-weight: bolder;
   font-style: cursive;
+  font-family: 'MedievalSharp', cursive;
   
 }
 .pagetitle {
@@ -131,13 +141,16 @@ min-width: 100%;
   font-family: 'Pangolin'
 }
 .pageInfo {
-  font-family: arial;
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   margin-bottom: 3%;
-  color: black;
+  color: darkslategray;
   font-weight: bolder;
   font-style: cursive;
-  -webkit-text-stroke: .5px white;
+  -webkit-text-stroke: .5px black;
+  font-family: 'MedievalSharp', cursive;
+}
+.title {
+  font-family: 'MedievalSharp', cursive;
 }
 .abouttitle {
   color: white;
@@ -159,8 +172,11 @@ min-width: 100%;
 .col-sm:hover {
   text-decoration: none;
 }
-
-
+.nocart {
+  color: white;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
 .col-sm:hover {
   transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
