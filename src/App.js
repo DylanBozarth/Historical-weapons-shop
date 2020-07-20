@@ -26,7 +26,7 @@ class App extends Component {
     this.state = {
       cart: [],
       total: 0,
-      newCart: []
+      newCart: [],
     };
   }
 
@@ -43,23 +43,21 @@ class App extends Component {
           image,
         },
       ],
-      total: this.state.total + price,
+      //total: this.state.total + price,
     });
   }
   // the item id and price
-  
-   
- // the item id and price
- Removefromcart = ( id, price ) => {
- this.setState(state => ({
-    cart: this.state.cart.filter(function(value) {
-     return value !== id 
-    }),
 
-   // total: state.total - price
-  }));
-  console.log(this.state.cart)
-};
+  // the item id and price
+  Removefromcart = (id, price) => {
+    this.setState((state) => ({
+      cart: this.state.cart.filter((value) => value.id !== id),
+
+       
+       
+    }));
+   
+  };
 
   render() {
     return (

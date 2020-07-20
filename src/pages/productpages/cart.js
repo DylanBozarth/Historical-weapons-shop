@@ -9,9 +9,12 @@ class Cart extends Component {
       total: null,
     };
   }
+  
   componentDidMount() {
     console.log(this.props.cart);
+    
   }
+  
 
   render() {
     if (this.props.cart.length !== 0) {
