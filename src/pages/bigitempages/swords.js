@@ -100,7 +100,7 @@ class Swords extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <Card key={title}  style={{ width: '18rem'}}>
+              <Card key={title} id={id}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title>{title}</Card.Title>
