@@ -50,12 +50,12 @@ class App extends Component {
   
    
  // the item id and price
- Removefromcart = ( id ) => {
- // this.setState(state => ({
-    //cart: this.state.cart.filter(e => e.id !== id),
-console.log(id)
-    //total: state.total - price
-  // }));
+ Removefromcart = ( id, price ) => {
+ this.setState(state => ({
+    cart: this.state.cart.filter(e => id !== id),
+
+    total: state.total - price
+  }));
 };
 
   render() {
