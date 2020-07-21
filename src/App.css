@@ -21,6 +21,12 @@
   margin-left: 5%;
   margin-right: 5%;
 }
+.formtext {
+  font-size: 16px;
+  font-family: 'MedievalSharp', cursive;
+  color: black;
+  font-size: 25px;
+}
 body {
  background-image: url('/homepagephotos/paper.jpg');
  background-size: 100% ;
@@ -86,21 +92,27 @@ min-width: 100%;
 }
 .banner  {
  
-  background-image: url('/banner.jpg');
+  background-image: url('/oldpaper.jpg');
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
   margin-bottom: -1%;
   border: solid 1.5px black;
 }
+
 .hometitle {
-  background-color: steelblue;
+  
   text-align: center;
-  color: whitesmoke;
+  color: darkgoldenrod;
   font-weight: bolder;
   font-style: cursive;
-  font-family: 'MedievalSharp', cursive;
-  
+  font-family: 'Great Vibes', cursive;
+  font-size: 6rem;
+  text-align: center;
+  margin-bottom: -8%;
+  margin-left: 20%;
+  margin-right: 20%;
+  -webkit-text-stroke: .1px black;
 }
 .pagetitle {
   background-color: black;
@@ -155,6 +167,10 @@ min-width: 100%;
 .abouttitle {
   color: white;
   text-align: center;
+}
+.aboutinfo {
+  font-family: 'MedievalSharp', cursive;
+  color: white; 
 }
 .name {
   color: white;
