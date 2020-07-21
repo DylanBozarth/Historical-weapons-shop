@@ -39,6 +39,11 @@ min-width: 100%;
     max-width: 100% !important;
     overflow: none;
   }
+  .hometitle {
+    margin-bottom: -25%;
+    font-size: 1rem;
+  }
+  
 
 
   }
@@ -97,7 +102,7 @@ min-width: 100%;
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
- 
+ height: 25%;
   border: solid 1.5px black;
 }
 
@@ -111,6 +116,7 @@ min-width: 100%;
   font-size: 3rem;
   text-align: center;
   margin-bottom: -8%;
+  margin-top: 3%;
   margin-left: 20%;
   margin-right: 20%;
   -webkit-text-stroke: .1px black;
@@ -259,6 +265,7 @@ max-width: 100%;
   position: fixed;
   max-width: 100% !important; 
   overflow: none;
+ 
 }
 
 /* BEGIN FORM */
