@@ -28,7 +28,7 @@
   font-size: 25px;
 }
 body {
- background-image: url('/homepagephotos/paper.jpg');
+ background-image: url('/homepagephotos/paper2.jpg');
  background-size: 100% ;
 min-height: 100%;
 min-width: 100%;
@@ -37,6 +37,7 @@ min-width: 100%;
 @media only screen and (max-width: 600px) {
   body {
     max-width: 100% !important;
+    overflow: none;
   }
 
 
@@ -96,18 +97,18 @@ min-width: 100%;
   background-size: 100% 100%;
   width: 100%;
   background-repeat: no-repeat;
-  margin-bottom: -1%;
+ 
   border: solid 1.5px black;
 }
 
 .hometitle {
   
   text-align: center;
-  color: darkgoldenrod;
+  color: goldenrod;
   font-weight: bolder;
   font-style: cursive;
   font-family: 'Great Vibes', cursive;
-  font-size: 6rem;
+  font-size: 3rem;
   text-align: center;
   margin-bottom: -8%;
   margin-left: 20%;
@@ -165,12 +166,23 @@ min-width: 100%;
   font-family: 'MedievalSharp', cursive;
 }
 .abouttitle {
-  color: white;
+  font-size: 3rem;
+  margin-bottom: 3%;
+  color: darkslategray;
+  font-weight: bolder;
+  font-style: cursive;
+  -webkit-text-stroke: .5px black;
+  font-family: 'MedievalSharp', cursive;
   text-align: center;
 }
 .aboutinfo {
+  font-size: 1.9rem;
+  margin-bottom: 3%;
+  color: darkslategray;
+  font-weight: bolder;
+  font-style: cursive;
+  -webkit-text-stroke: .5px black;
   font-family: 'MedievalSharp', cursive;
-  color: white; 
 }
 .name {
   color: white;
@@ -245,6 +257,8 @@ max-width: 100%;
 }
 .navbarmaster {
   position: fixed;
+  max-width: 100% !important; 
+  overflow: none;
 }
 
 /* BEGIN FORM */

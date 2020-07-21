@@ -5,7 +5,7 @@ export const About = () => (
     <h1 className="abouttitle">History's Armory </h1>
     <div className="row">
       <div className="col-lg">
-        <p className="name">
+        <p  className="aboutinfo">
           {" "}
           Founder <br /> Chad Ferguson
         </p>
@@ -18,7 +18,7 @@ export const About = () => (
         ></img>
       </div>
       <div className="col-lg">
-        <p className="name">
+        <p className="aboutinfo">
           {" "}
           Co-Founder <br />
           Craig Williams
