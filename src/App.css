@@ -45,7 +45,6 @@ min-width: 100%;
   }
   
 
-
   }
   .footer {
     position: fixed;
@@ -106,6 +105,10 @@ min-width: 100%;
   border: solid 1.5px black;
 }
 
+.cardtext {
+  height: 150px;
+  width: 150px;
+}
 .hometitle {
   
   text-align: center;
@@ -170,6 +173,7 @@ min-width: 100%;
 }
 .title {
   font-family: 'MedievalSharp', cursive;
+  position: relative;
 }
 .abouttitle {
   font-size: 3rem;

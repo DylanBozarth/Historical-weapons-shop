@@ -23,12 +23,12 @@ class Cart extends Component {
             <Card.Img variant="top" src={image} width="10rem" height="180rem" />
             <Card.Body>
               <Card.Title className="title">{title}</Card.Title>
-              <Card.Text>
+              <Card.Text className="cardtext">
                 {desc} <br />
                 {price}
               </Card.Text>
               <Button
-                variant="btn btn-warning"
+                variant="btn btn-warning itembutton"
                 onClick={() => this.props.Removefromcart(id)}
               >
                 Remove from cart

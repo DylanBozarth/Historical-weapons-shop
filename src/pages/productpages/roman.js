@@ -13,7 +13,7 @@ class Roman extends Component {
           desc: "Weilded by the famous Varagian guard of the Late roman empire. Over 5 feet in length, this axe requires great strength to swing."
         },
         {
-          title: 'Early Roman weapons, full set',
+          title: "Early Roman soldiers' kit",
           imageUrl: "/itemphotos/roman/fullset.jpg",
           price: 250,
           id: 1,
@@ -34,7 +34,7 @@ class Roman extends Component {
           desc: "As the Roman empire carried on, the classic shortsword was made to be longer in order to compensate for better armor.  "
         },
         {
-          title: "Early Roman officer's sword.",
+          title: "Centurion's sword.",
           imageUrl: "/itemphotos/roman/officerssword.jpg",
           price: 250,
           id: 1,
@@ -85,11 +85,11 @@ class Roman extends Component {
   <Card.Img variant="top" src={imageUrl}  width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title className="title">{title}</Card.Title>
-    <Card.Text>
+    <Card.Text className="cardtext">
       {desc} <br />
      $ {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price, id })}>Add to cart</Button>
+    <Button  className="itembutton" variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price, id })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}

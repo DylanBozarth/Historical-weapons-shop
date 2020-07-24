@@ -125,11 +125,11 @@ class Armor extends Component {
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title className="title">{title}</Card.Title>
-    <Card.Text>
+    <Card.Text className="cardtext">
       {desc} <br />
      $ {price}
     </Card.Text>
-    <Button variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price,id })}>Add to cart</Button>
+    <Button className="itembutton" variant="primary" onClick={e => this.handleAddToCart(e, { title, image : imageUrl, desc, price,id })}>Add to cart</Button>
   </Card.Body>
 </Card>
         ))}
