@@ -17,13 +17,13 @@ class Thing extends Component {
         >
           <Navbar.Brand>
             <Link to="/" className="navbarlink">
-              <p className="navbarlink">History's Armory</p>
+              <p className=" navbartitle">History's Armory</p>
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="mr-auto">
-              <NavDropdown title="Shop by Era" id="collasible-nav-dropdown">
+              <NavDropdown className="navbarsubtitle" title="Shop by Era" id="collasible-nav-dropdown">
                 <NavDropdown.Item>
                   <Link to="/Neolithic" className="dropdownlink">
                     Stone age
@@ -55,7 +55,7 @@ class Thing extends Component {
                   </Link>
                 </NavDropdown.Item>
               </NavDropdown>
-              <NavDropdown
+              <NavDropdown className="navbarsubtitle"
                 title="Shop by Category"
                 id="collasible-nav-dropdown"
               >
@@ -83,12 +83,12 @@ class Thing extends Component {
               <Nav>
                 <Nav.Link>
                   <Link to="/About">
-                    <p className="navbarlink">About us</p>
+                    <p className="navbarsubtitle">About us</p>
                   </Link>
                 </Nav.Link>
                 <Nav.Link>
                   <Link to="/Sell">
-                    <p className="navbarlink">For Craftsmen</p>
+                    <p className="navbarsubtitle">For Craftsmen</p>
                   </Link>
                 </Nav.Link>
               </Nav>

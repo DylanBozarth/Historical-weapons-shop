@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export const Homepage = () => (
   <div>
     
-    <div className="banner"><h1 className="hometitle">Your Weapons and Armor Supplier</h1><br /> <br /> <br /> <br /> <br /> <br /> <br /></div>
+    <div className="banner"><h1 className="hometitle">Your Weapons and Armor Supplier</h1><h1 className="mobiletitle">Your Weapons and Armor Supplier</h1><br /> <br /> <br /> <br /> <br /> <br /> </div>
     
     <div className="container">
       <div className="row eratype">
