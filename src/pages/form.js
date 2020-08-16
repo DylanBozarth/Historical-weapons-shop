@@ -8,7 +8,7 @@ class Form extends Component {
         alert('Thank you, we will contact you shortly!')
     }
     render() { 
-        return ( <div>
+        return ( <div className="formpage">
             <div id="form-main">
       <div id="form-div">
         <form className="form" id="form1">

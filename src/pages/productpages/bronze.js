@@ -73,7 +73,7 @@ class Bronze extends Component {
         {
              
              this.state.items.map(({title, imageUrl, desc, price, id }) => (
-              <Card key={id} id={id}  style={{ width: '18rem'}}>
+              <Card className="carditem" key={id} id={id}  style={{ width: '18rem'}}>
   <Card.Img variant="top" src={imageUrl} width='10rem' height='180rem' />
   <Card.Body>
     <Card.Title className="title">{title}</Card.Title>

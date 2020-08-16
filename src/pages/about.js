@@ -4,8 +4,8 @@ export const About = () => (
   <div className="container">
     <h1 className="abouttitle">History's Armory </h1>
     <div className="row">
-      <div className="col-lg">
-        <p  className="aboutinfo">
+      <div className="col-sm-6">
+        <p className="aboutinfo">
           {" "}
           Founder <br /> Chad Ferguson
         </p>
@@ -17,7 +17,7 @@ export const About = () => (
           alt="chad"
         ></img>
       </div>
-      <div className="col-lg">
+      <div className="col-sm-6">
         <p className="aboutinfo">
           {" "}
           Co-Founder <br />
