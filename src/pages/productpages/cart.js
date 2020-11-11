@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Button } from "react-bootstrap";
+import { Card, Button, Container } from "react-bootstrap";
 import { Link } from "react-router-dom";
 class Cart extends Component {
   constructor() {
@@ -10,10 +10,7 @@ class Cart extends Component {
     };
   }
   
-  componentDidMount() {
-    console.log(this.props.cart);
-    
-  }
+ 
  
   render() {
     if (this.props.cart.length !== 0) {
@@ -40,14 +37,15 @@ class Cart extends Component {
       return (
         <div className="FullPage Container">
           <div className="ItemList row">{cartitems}</div>
-          <Link to="/Checkout"><button className="btn btn-success checkoutbutton">Checkout</button></Link>
+          <button className="btn btn-success checkoutbutton" onClick={() => alert("Sorry, this isn't a real company")}>Checkout</button>
         </div>
       );
     } else {
       return (
+<Container className="paper">
         <h1 className="nocart">
           Add items to your cart and they will appear here.
-        </h1>
+        </h1></Container>
       );
     }
   }

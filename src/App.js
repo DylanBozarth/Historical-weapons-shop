@@ -30,9 +30,7 @@ class App extends Component {
       newCart: [],
     };
   }
-componentDidMount() {
-  alert ('Site is currently not live, enjoy this preview for now.')
-}
+
   addToCart({ title, desc, price, image, id }) {
     this.setState({
       cart: [

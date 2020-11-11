@@ -35,6 +35,12 @@ background-image: url(./old_paper.jpg);
 background-size: 100% 100%;
 
 }
+.paper {
+  background-image: url(./old_paper.jpg);
+background-size: 100% 100%;
+height: 100vh;
+
+}
 @media only screen and (max-width: 600px) {
   body {
     max-width: 100% !important;
@@ -71,7 +77,7 @@ background-size: 100% 100%;
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: #69a275;
+    background-color: #3c3a3a;
     color: white;
     text-align: center;
   }
@@ -206,14 +212,15 @@ background-size: 100% 100%;
 .pageInfo {
   font-size: 1.9rem;
   margin-bottom: 3%;
-  color: darkslategray;
+  color: black;
   font-weight: bolder;
   font-style: cursive;
-  -webkit-text-stroke: .5px black;
+  -webkit-text-stroke: .5px white;
   font-family: 'MedievalSharp', cursive;
+  text-align: center;
 }
 .navbartitle {
-  color: black;
+  color: white;
   font-weight: bolder;
   font-style: cursive;
   -webkit-text-stroke: .1px gold;
@@ -222,9 +229,8 @@ background-size: 100% 100%;
   font-size: 1.7rem
 }
 .navbartitle:hover {
-  text-decoration: none;
+  text-decoration: none !important;
   -webkit-text-stroke: .5px gold;
-  
 }
 .navbarsubtitle {
   color: white;
@@ -275,9 +281,12 @@ background-size: 100% 100%;
   text-decoration: none;
 }
 .nocart {
-  color: white;
-  margin-left: 10%;
-  margin-right: 10%;
+  color: black;
+  font-weight: bolder;
+  font-style: cursive;
+  -webkit-text-stroke: .5px white;
+  font-family: 'MedievalSharp', cursive;
+  text-align: center;
 }
 
 .col-sm:hover {
